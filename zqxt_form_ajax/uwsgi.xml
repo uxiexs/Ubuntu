@@ -1,0 +1,11 @@
+<uwsgi>  
+ <socket>:8001</socket>  
+ <pythonpath>/home/uxeix/workspace/zqxt_form_ajax/</pythonpath>
+ <module>zqxt_form_ajax.wsgi:application</module>
+ <profiler>true</profiler>  
+ <memory-report>true</memory-report>  
+ <enable-threads>true</enable-threads>  
+ <logdate>true</logdate>  
+ <plugins>python</plugins>
+ <limit-as>6048</limit-as>  
+</uwsgi>

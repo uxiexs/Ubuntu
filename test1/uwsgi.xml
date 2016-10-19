@@ -1,0 +1,11 @@
+<uwsgi>  
+ <socket>:8001</socket>  
+ <pythonpath>/home/uxeix/workspace/test1/</pythonpath>
+ <module>test1.wsgi:application</module>
+ <profiler>true</profiler>  
+ <memory-report>true</memory-report>  
+ <enable-threads>true</enable-threads>  
+ <logdate>true</logdate>  
+ <plugins>python</plugins>
+ <limit-as>6048</limit-as>  
+</uwsgi>
