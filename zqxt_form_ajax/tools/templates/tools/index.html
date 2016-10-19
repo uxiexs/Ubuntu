@@ -7,7 +7,7 @@
 {% block content %}
 <p>请输入两个数字</p>
 {% csrf_token %}
-<form action="/add/" method="POST">
+<form action="/add/" method="get">
     <!--a: <input type="text" id="a" name="a"> <br>-->
     <!--b: <input type="text" id="b" name="b"> <br>-->
     {% for field in forms %}
