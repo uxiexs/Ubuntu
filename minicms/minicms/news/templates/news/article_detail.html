@@ -1,1 +1,11 @@
 {% extends 'news/base.html'%}
+
+<!-- title -->
+{% block title %}
+文章
+{% endblock %}
+
+<!-- content -->
+{% block content %}
+article:{{article_slug}}
+{% endblock %}
