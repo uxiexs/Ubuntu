@@ -7,7 +7,7 @@ from DjangoUeditor import urls as DjangoUeditor_urls
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^column/(?P<column_slug>[^/]+)/$', views.column_detail),
-    url(r'^news/(?P<article_slug>[^/]+)/$',  views.article_detail),
+    url(r'^article/(?P<article_slug>[^/]+)/$',  views.article_detail),
 
     url(r'^ueditor/', include('DjangoUeditor.urls')),
     url(r'^admin/', include(admin.site.urls)),
