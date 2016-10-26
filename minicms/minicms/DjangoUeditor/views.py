@@ -206,7 +206,8 @@ def UploadFile(request):
 
     #返回数据
     return_info = {
-        'url': urllib.basejoin(USettings.gSettings.MEDIA_URL , OutputPathFormat) ,                # 保存后的文件名称
+        # 'url': urllib.basejoin(USettings.gSettings.MEDIA_URL , OutputPathFormat) ,                # 保存后的文件名称
+        'url': urllib.request.urljoin(USettings.gSettings.MEDIA_URL , OutputPathFormat) ,                # 保存后的文件名称
         'original': upload_file_name,                  #原始文件名
         'type': upload_original_ext,
         'state': state,                         #上传状态，成功时返回SUCCESS,其他任何值将原样返回至图片上传框中
@@ -302,5 +303,3 @@ def save_scrawl_file(request,filename):
     except Exception,E:
         state="写入图片文件错误:%s" % E.message
     return state
-
-

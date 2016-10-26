@@ -1,11 +1,11 @@
-{% extends 'news/base.html'%}
+{% extends "news/base.html" %}
 
-<!-- title -->
 {% block title %}
-栏目
-{% endblock %}
+{{ column.title }}
+{% endblock title %}
 
-<!-- content -->
 {% block content %}
-column detail:{{column_slug}}
-{% endblock %}
+栏目简介：{{ column.intro }}
+栏目文章列表：
+还需要完善
+{% endblock content %}

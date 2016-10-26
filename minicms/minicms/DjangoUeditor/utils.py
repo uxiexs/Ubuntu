@@ -119,4 +119,3 @@ class FileSize():
                 return True
             else:
                 return False
-
