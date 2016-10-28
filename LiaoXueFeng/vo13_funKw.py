@@ -7,6 +7,6 @@
 
 
 def fun(name=input("name: "), age=input("age: "), **kw):
-    return {'name': name, 'age': age, 'other': kw}
+    return 'name: ', name, 'age: ', age, 'other: ', kw
 
-print(fun(color="red"))
+print(fun())
