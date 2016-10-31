@@ -21,5 +21,5 @@ def hanoi(n,src,tmp,dst):
         hanoi(n-1,src,dst,tmp) # 将盘子从src移动到tmp
         move(src,dst) # 将第n个盘子从src移到dst
         hanoi(n-1,tmp,src,dst) # 将tmp上的盘子移动到dst
-
-hanoi(3,'A','B','C')
+n = input("Plese input the number:")
+hanoi(int(n),'A','B','C')
