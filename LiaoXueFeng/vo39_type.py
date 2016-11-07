@@ -83,6 +83,10 @@ print('是否有属性 y:', hasattr(obj, 'y'))
 setattr(obj, 'y', 88)
 print('是否有属性 y:', hasattr(obj, 'y'))
 print('打印属性 y:', obj.y)
-print(getattr(obj,'x'),getattr(obj,'y'))
-print(getattr(obj,'z',404))
-print(obj.x+obj.y)
+print(getattr(obj, 'x'), getattr(obj, 'y'))
+print(getattr(obj, 'z', 404))
+
+#*************************************************************************
+# 小结通过内置的一系列函数，我们可以对任意一个Python对象进行剖析，拿到其内部的数据。要注意的 # 是,只有在不知道对象信息的时候，我们才会去获取对象信息。如果可以直接写：
+#*************************************************************************
+sum = obj.x + obj.y
