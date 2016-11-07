@@ -3,7 +3,7 @@
 """
 @version: 3.52
 @author: Uxeix
-@license: Apache Licence 
+@license: Apache Licence
 @contact: Uxeixs@gmail.com
 @site: https://github.com/uxiexs
 @software: PyCharm
@@ -15,24 +15,29 @@
 # 如果没有合适的继承类，就使用object类，这是所有类最终都会继承的类。
 # 定义好了Student类，就可以根据Student类创建出Student的实例，创建实例是通过类名+()实现的：
 #**************************************************************
+
+
 class Student(object):
-    def __init__(self,name,score):
+
+    def __init__(self, name, score):
         self.name = name
         self.score = score
+
     def print_score(self):
-        print('%s : %s' %(self.name,self.score))
+        print('%s : %s' % (self.name, self.score))
+
     def get_grade(self):
-        if self.score>=90:
+        if self.score >= 90:
             return 'A'
-        elif self.score>=60:
+        elif self.score >= 60:
             return 'B'
         else:
             return 'C'
 #**************************************************************
 # 可以看到，变量bart指向的就是一个Student的实例，后面的0x10a67a590是内存地址，每个object的地址都不一样，而Student本身则是一个类。
 #**************************************************************
-bart = Student('Bart Simple',59)
-koro = Student('Koro Simple',60)
+bart = Student('Bart Simple', 59)
+koro = Student('Koro Simple', 60)
 print(bart)
 print(koro)
 print(Student)
@@ -44,8 +49,10 @@ print(Student)
 # 面向对象编程的一个重要特点就是数据封装。在上面的Student类中，每个实例就拥有各自的name和score这些数据。我们可以通过函数来访问这些数据，
 # 比如打印一个学生的成绩：
 #***************************************************************
+
+
 def print_score(std):
-    return ('%s: %s' %(std.name,std.score))
+    return ('%s: %s' % (std.name, std.score))
 # print(print_score(bart))
 bart.print_score()
 print(bart.get_grade())
