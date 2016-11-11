@@ -11,14 +11,14 @@
 import os
 print(os.name) # 操作系统类型
 # 如果是posix，说明系统是Linux、Unix或Mac OS X，如果是nt，就是Windows系统。
-print(os.uname())
+# print(os.uname())
 
 #*******************************************************************************
 # 环境变量
 # 在操作系统中定义的环境变量，全部保存在os.environ这个变量中，可以直接查看：
 #*******************************************************************************
 
-# print(os.environ)
+print(os.environ)
 
 #*******************************************************************************
 # 要获取某个环境变量的值，可以调用os.environ.get('key')：
@@ -31,6 +31,31 @@ print(os.uname())
 # 查看当前目录的绝对路径:
 print(os.path.abspath('.'))
 # 在某个目录下创建一个新目录，首先把新目录的完整路径表示出来:
-print(os.path.join('/home/uxeix', 'testdir'))
+# print(os.path.join('/home/uxeix', 'testdir'))
 # os.mkdir('/home/uxeix/testdir')
-os.rmdir('/home/uxeix/testdir')
+# os.rmdir('/home/uxeix/testdir')
+
+# 同样的道理，要拆分路径时，也不要直接去拆字符串，而要通过os.path.split()函数，这样可以把一个路径拆分为两部分，
+# 后一部分总是最后级别的目录或文件名：
+
+print(os.path.split('/usr/uxiex/testDir/sad.txt'))
+
+# os.path.splitext()可以直接让你得到文件扩展名，很多时候非常方便：
+print(os.path.splitext('/usr/uxeix/testDir/sadness.txt'))
+
+# 重命名文件
+# os.rename('img/grils.jpg','img/gril.jpg')
+
+# 复制文件
+# shutil模块提供了copyfile()的函数，你还可以在shutil模块中找到很多实用函数，它们可以看做是os模块的补充。
+from shutil import copyfile
+
+# copyfile('img/gril.jpg','e:/csdn/gril.jpg')
+
+# 利用Python的特性来过滤文件。比如我们要列出当前目录下的所有目录，只需要一行代码：
+print([x for x in os.listdir('.') if os.path.isdir(x)])
+
+# 要列出所有的.py文件，也只需一行代码：
+print([x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py'])
+
+# Python的os模块封装了操作系统的目录和文件操作，要注意这些函数有的在os模块中，有的在os.path模块中。
