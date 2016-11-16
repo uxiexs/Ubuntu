@@ -46,18 +46,20 @@ def login(username,password):
     with open('/home/uxeix/workspace/LiaoXueFeng/file/user.list', 'r') as f:
         # 遍历文件内的数据对比
         for line  in f.readlines():
-            # 获取flag
-            flag = check_pwd(line, username, md5_pwd)
-            # 根据flag的不同做不同的处理
-            if flag == 1:
-                print('用户名不存在')
-                return
-            elif flag == 2:
-                print('密码错误')
-                return
-            elif flag == 3:
-                login_success(username)
-                return
+            # 当用户名被包含在某行时,执行匹配操作
+            if username in line:
+                # 获取flag
+                flag = check_pwd(line, username, md5_pwd)
+                # 根据flag的不同做不同的处理
+                if flag == 1:
+                    print('用户名不存在')
+                    return
+                elif flag == 2:
+                    print('密码错误')
+                    return
+                elif flag == 3:
+                    login_success(username)
+                    return
 if __name__ == '__main__':
     username = input('请输入用户名: ')
     password = input('请输入密码: ')
