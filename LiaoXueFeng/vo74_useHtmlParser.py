@@ -23,11 +23,8 @@ resp = requests.get('https://www.python.org/events/python-events/')
 # resp = requests.get('https://mail.google.com/mail/u/0/#inbox/')
 soup = BeautifulSoup(resp.text, 'html.parser')
 
-# for li in soup.select('.list-recent-events > li'):
-#     print('title:',li.find('a').text)
-#     print('time:' ,li.find('time').text)
-#     print('location:',li.select_one('.event-location').text)
-#     print('*' * 100)
-with open('copy.html','a') as f:
-        f.write(resp)
-# print(soup)
+for li in soup.select('.list-recent-events > li'):
+    print('title:',li.find('a').text)
+    print('time:' ,li.find('time').text)
+    print('location:',li.select_one('.event-location').text)
+    print('*' * 100)
