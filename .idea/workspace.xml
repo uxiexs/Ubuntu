@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95e10071-9179-4000-a472-a815cbe2e9b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LiaoXueFeng/vo75_urlib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="95e10071-9179-4000-a472-a815cbe2e9b9" name="Default" comment="" />
     <ignored path="Ubuntu.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,6 +30,7 @@
     <SUITE FILE_PATH="coverage/Ubuntu$vo64_taskWorker.coverage" NAME="vo64_taskWorker Coverage Results" MODIFIED="1479050581812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo60_json.coverage" NAME="vo60_json Coverage Results" MODIFIED="1478942600544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo43_propertyTest.coverage" NAME="vo43_propertyTest Coverage Results" MODIFIED="1478608728373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
+    <SUITE FILE_PATH="coverage/Ubuntu$vo75_useUrlib.coverage" NAME="vo75_useUrlib Coverage Results" MODIFIED="1479649441747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo46_emumeration.coverage" NAME="vo46_emumeration Coverage Results" MODIFIED="1478614646083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo63_threadLocal.coverage" NAME="vo63_threadLocal Coverage Results" MODIFIED="1479030793890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo62_thread.coverage" NAME="vo62_thread Coverage Results" MODIFIED="1479024563137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
@@ -49,23 +47,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="vo75_urlib.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo75_urlib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="85" column="107" selection-start-line="85" selection-start-column="107" selection-end-line="85" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vo74_useHtmlParser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo74_useHtmlParser.py">
+      <file leaf-file-name="vo75_useUrlib.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo75_useUrlib.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
-                <element signature="e#548#563#0" expanded="true" />
+                <element signature="e#232#261#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,6 +102,7 @@
         <option value="$PROJECT_DIR$/vo74_useHtmlParser.py" />
         <option value="$PROJECT_DIR$/LiaoXueFeng/vo74_useHtmlParser.py" />
         <option value="$PROJECT_DIR$/LiaoXueFeng/vo75_urlib.py" />
+        <option value="$PROJECT_DIR$/LiaoXueFeng/vo75_useUrlib.py" />
       </list>
     </option>
   </component>
@@ -203,25 +192,7 @@
       <recent name="F:\GitHub\Ubuntu\LiaoXueFeng" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.vo74_useHtmlParser (1)">
-    <configuration default="false" name="vo73_xmlTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Ubuntu" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\GitHub\Ubuntu\LiaoXueFeng\vo73_xmlTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.vo75_useUrlib">
     <configuration default="false" name="vo74_htmlParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,6 +261,24 @@
       <module name="Ubuntu" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LiaoXueFeng/vo75_urlib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="vo75_useUrlib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LiaoXueFeng" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ubuntu" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LiaoXueFeng/vo75_useUrlib.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -550,19 +539,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.Ubuntu" />
-      <item index="1" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
-      <item index="3" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
-      <item index="4" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.vo75_urlib" />
+      <item index="1" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
+      <item index="2" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
+      <item index="3" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.vo75_urlib" />
+      <item index="5" class="java.lang.String" itemvalue="Python.vo75_useUrlib" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.vo75_urlib" />
-        <item index="2" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
-        <item index="3" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
-        <item index="4" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
+        <item index="0" class="java.lang.String" itemvalue="Python.vo75_useUrlib" />
+        <item index="1" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.vo75_urlib" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
+        <item index="4" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
       </list>
     </recent_temporary>
   </component>
@@ -937,9 +926,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo75_urlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="85" column="107" selection-start-line="85" selection-start-column="107" selection-end-line="85" selection-end-column="107" />
+        <state relative-caret-position="136">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo75_useUrlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#232#261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
