@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95e10071-9179-4000-a472-a815cbe2e9b9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LiaoXueFeng/vo74_useHtmlParser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vo73_xmlTest.py" afterPath="$PROJECT_DIR$/LiaoXueFeng/vo73_xmlTest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vo74_htmlParser.py" afterPath="$PROJECT_DIR$/LiaoXueFeng/vo74_htmlParser.py" />
     </list>
     <ignored path="Ubuntu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +21,7 @@
     <SUITE FILE_PATH="coverage/Ubuntu$vo73_xmlTest.coverage" NAME="vo73_xmlTest Coverage Results" MODIFIED="1479628807280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo36_class.coverage" NAME="vo36_class Coverage Results" MODIFIED="1478447463153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo59_pickle.coverage" NAME="vo59_pickle Coverage Results" MODIFIED="1478939552892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
+    <SUITE FILE_PATH="coverage/Ubuntu$vo74_useHtmlParser.coverage" NAME="vo74_useHtmlParser Coverage Results" MODIFIED="1479645075416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo45_custom.coverage" NAME="vo45_custom Coverage Results" MODIFIED="1478610276343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo58_os.coverage" NAME="vo58_os Coverage Results" MODIFIED="1478878174968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
     <SUITE FILE_PATH="coverage/Ubuntu$vo64_taskManage.coverage" NAME="vo64_taskManage Coverage Results" MODIFIED="1479050575301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LiaoXueFeng" />
@@ -45,13 +49,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="vo74_htmlParser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vo74_htmlParser.py">
+      <file leaf-file-name="vo74_useHtmlParser.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo74_useHtmlParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+            <state relative-caret-position="433">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
               <folding>
-                <element signature="e#652#686#0" expanded="true" />
+                <element signature="e#548#563#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,6 +101,7 @@
         <option value="$PROJECT_DIR$/LiaoXueFeng/vo73_xml.py" />
         <option value="$PROJECT_DIR$/vo73_xmlTest.py" />
         <option value="$PROJECT_DIR$/vo74_htmlParser.py" />
+        <option value="$PROJECT_DIR$/vo74_useHtmlParser.py" />
       </list>
     </option>
   </component>
@@ -168,24 +173,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ubuntu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ubuntu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiaoXueFeng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="file" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -199,25 +186,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="Python.vo74_htmlParser">
-    <configuration default="false" name="vo64_taskWorker" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LiaoXueFeng" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Ubuntu" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LiaoXueFeng/vo64_taskWorker.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub\Ubuntu\LiaoXueFeng" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.vo74_useHtmlParser">
     <configuration default="false" name="vo73_closing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,7 +241,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Ubuntu" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vo73_xmlTest.py" />
+      <option name="SCRIPT_NAME" value="F:\GitHub\Ubuntu\LiaoXueFeng\vo73_xmlTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -285,7 +259,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Ubuntu" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vo74_htmlParser.py" />
+      <option name="SCRIPT_NAME" value="F:\GitHub\Ubuntu\LiaoXueFeng\vo74_htmlParser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="vo74_useHtmlParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ubuntu" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="F:\GitHub\Ubuntu\LiaoXueFeng\vo74_useHtmlParser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -546,19 +538,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.Ubuntu" />
-      <item index="1" class="java.lang.String" itemvalue="Python.vo64_taskWorker" />
-      <item index="2" class="java.lang.String" itemvalue="Python.vo73_closing" />
-      <item index="3" class="java.lang.String" itemvalue="Python.vo73_xml" />
-      <item index="4" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
-      <item index="5" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
+      <item index="1" class="java.lang.String" itemvalue="Python.vo73_closing" />
+      <item index="2" class="java.lang.String" itemvalue="Python.vo73_xml" />
+      <item index="3" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
+      <item index="5" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
-        <item index="1" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.vo73_xml" />
-        <item index="3" class="java.lang.String" itemvalue="Python.vo73_closing" />
-        <item index="4" class="java.lang.String" itemvalue="Python.vo64_taskWorker" />
+        <item index="0" class="java.lang.String" itemvalue="Python.vo74_useHtmlParser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.vo74_htmlParser" />
+        <item index="2" class="java.lang.String" itemvalue="Python.vo73_xmlTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vo73_xml" />
+        <item index="4" class="java.lang.String" itemvalue="Python.vo73_closing" />
       </list>
     </recent_temporary>
   </component>
@@ -589,15 +581,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1924" height="1057" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17410229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17410229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50180507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50180507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12350381" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -607,7 +600,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -627,7 +619,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vo73_xmlTest.py">
+    <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo73_xmlTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -895,7 +887,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo73_xmlTest.py">
+    <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo73_xmlTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="41" />
@@ -903,12 +895,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo74_htmlParser.py">
+    <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo74_htmlParser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiaoXueFeng/vo74_useHtmlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
-            <element signature="e#652#686#0" expanded="true" />
+            <element signature="e#548#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
