@@ -3,7 +3,7 @@
 """
 @version: 3.52
 @author: Uxeix
-@license: Apache Licence 
+@license: Apache Licence
 @contact: Uxeixs@gmail.com
 @site: https://github.com/uxiexs
 @software: PyCharm
@@ -100,8 +100,8 @@ class Weather(object):
 
 if __name__ == '__main__':
     weather = Weather()
-    # logd('citylist: ', weather.get_citylist())     # 第一次需要建立http请求
-    logd('citylist: ', weather.get_citylist())     # 第二次则直接返回存储的数据
-    # logd('citylist: ', weather.get_citylist(Weather.SearchType.HotWorld))  # 第三次因更改搜索类型，重新请求获取新的数据
+    logd('citylist: ', weather.get_citylist())     # 第一次需要建立http请求
+    # logd('citylist: ', weather.get_citylist())     # 第二次则直接返回存储的数据
+    logd('citylist: ', weather.get_citylist(Weather.SearchType.HotWorld))  # 第三次因更改搜索类型，重新请求获取新的数据
     logd('-------------------------------------------------------------')
     logd('weather: ', weather.get_weather('changsha'))
