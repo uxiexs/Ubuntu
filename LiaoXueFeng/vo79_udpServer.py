@@ -19,4 +19,11 @@ print('Bind UDP on 9999...')
 while True:
     # 接收数据:
     data, addr = s.recvfrom(1024)
-    print('Recevied')
+    print('Received from %s:%s.' % addr)
+    s.sendto(b'Hello, %s!' % data, addr)
+
+# recvfrom()方法返回数据和客户端的地址与端口，这样，服务器收到数据后，直接调用sendto()就可以把数据用UDP发给客户端。
+#
+# 注意这里省掉了多线程，因为这个例子很简单。
+#
+# 客户端使用UDP时，首先仍然创建基于UDP的Socket，然后，不需要调用connect()，直接通过sendto()给服务器发数据：
