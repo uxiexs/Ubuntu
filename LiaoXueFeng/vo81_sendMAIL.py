@@ -18,7 +18,7 @@ mail_pass = '870125xx'       # 客户端授权密码
 # 发件人 与 收件人
 #===============================================================================
 sender = 'uxeixs@126.com'        # 发件人邮箱
-receivers = ['406602271@qq.com','koulaxx@163.com'] # 收件人邮箱
+receivers = ['406602271@qq.com','koulaxx@163.com','uxeixs@gmail.com'] # 收件人邮箱
 
 #===============================================================================
 # 邮件内容设置
@@ -26,7 +26,6 @@ receivers = ['406602271@qq.com','koulaxx@163.com'] # 收件人邮箱
 content = '<em style="color:red">cool</em>'
 title = 'Python SMTP Mail Test'  # 邮件主题
 # 指定subtype为alternative，同时支持html和plain格式
-msg = MIMEMultipart('alternative')
 message = MIMEText(content, 'html', 'utf-8')  # 内容, 格式, 编码
 message['From'] = "{}".format(sender)
 message['To'] = ",".join(receivers)
