@@ -30,7 +30,8 @@ from_addr = 'uxeixs@126.com'
 passwd = '870125xx'
 
 # 接收参数: 收件人地址,可多个
-to_addr = 'uxeixs@gmail.com'
+to_addr = '406602271@qq.com'
+# to_addr = 'uxeixs@gmail.com'
 
 # 接收参数: SMTP服务器(注意:是发件人的smtp服务器)
 smtp_server = 'smtp.126.com'
@@ -47,7 +48,7 @@ content = input('邮件正文: ')
 msg = MIMEMultipart()
 msg['From'] = _format_addr(from_addr)
 msg['To'] = _format_addr(to_addr)
-msg['Subject'] = _format_addr(str(subject))
+msg['Subject'] = Header(str(subject), 'utf-8').encode()
 
 #===============================================================================
 # 邮件正文是MIMEText
@@ -61,7 +62,7 @@ with open('/home/uxeix/Pictures/head/1.png', 'rb') as f:
     # 设置附件的MIME和文件名,这里是png类型:
     mime = MIMEBase('image', 'png', filename='test.png')
     # 加上必要的头信息
-    mime.add_header('Content-Dispostion', 'attachment', filename='test.png')
+    mime.add_header('Content-Disposition', 'attachment', filename='test.jpg')
     mime.add_header('Content-ID', '<0>')
     mime.add_header('X-Attachment-Id', '0')
     # 把附件内容读进来
