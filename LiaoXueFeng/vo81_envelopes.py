@@ -28,7 +28,7 @@ envelope.add_attachment(
 # 发送邮件
 #=========================================================================
 try:
-    envelope.send('smtp.126.com', login='uxeixs@126.com', password='870125xx')
+    envelope.send('smtp.126.com', login='uxeixs@126.com', password='你猜')
     print('邮件发送成功')
 except Exception as e:
     print(e)
