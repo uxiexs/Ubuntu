@@ -44,3 +44,9 @@ try:
 
 except Exception as e:
     print(e)
+
+finally:
+    conn.close()
+    print('断开连接')
+    conn.logout()
+    print('登出')
