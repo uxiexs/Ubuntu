@@ -21,5 +21,5 @@ except Exception as e:
 finally:
     # 关闭游标
     cursor.close()
-    # 断开数据库连接
+    # 断开连接
     conn.close()
