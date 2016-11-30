@@ -29,7 +29,7 @@ try:
     name varchar(20)
     )''')
     print ("Table created successfully")
-    # 插入一行记录，注意MySQL的占位符是%s:
+    # 插入一行记录，注意占位符是%s:
     cur.execute('insert into vo84_user (id, name) values (%s, %s)', ['1', 'Michael'])
     # print(cur.rowcount)
     # 提交事务
