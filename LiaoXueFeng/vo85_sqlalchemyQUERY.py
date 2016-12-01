@@ -14,7 +14,6 @@ try:
     query = session.query(m_table)
     data = query.all()
     t_data = []
-    # print(data)
     for row in data:
         row_data = {}
         for index in range(len(row)):
