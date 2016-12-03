@@ -49,6 +49,6 @@ try:
     # 打印邮件 data[0]:默认收件箱
     for num in data[0].split():
         typ, data = conn.fetch(num, '(RFC822)')
-        print ('Message %s\n%s\n' % (num, data[0][1].decode('utf-8')))
+        print('Message %s\n%s\n' % (num, data[0][1].decode('utf-8')))
 except Exception as e:
     print(e)
