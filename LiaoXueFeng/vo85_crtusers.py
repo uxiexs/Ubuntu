@@ -46,7 +46,7 @@ class Address(Base):
 
 try:
 
-    User.addresses = relationship(
+    User.vo85_addresses = relationship(
         "Address", order_by=Address.id, back_populates="user")
     Base.metadata.create_all(engine)
 
@@ -64,7 +64,7 @@ try:
                      User(name='fred', fullname='Fred Flinstone', password='blah')])
 
     jack = User(name='jack', fullname='Jack Bean', password='gjffdd')
-    jack.addresses = [Address(email_address='jack@google.com'), Address(
+    jack.vo85_addresses = [Address(email_address='jack@google.com'), Address(
         email_address='j25@yahoo.com')]
     session.add(jack)
 
