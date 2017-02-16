@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/own.css" />
+		<link rel="stylesheet" href="../css/iconfont-phone.css" />
+		<style>
+			.mui-card .mui-control-content {}
+			
+			.mui-control-content {
+				height: 450px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" id="mui-content">
+			<div style="padding: 10px 10px;">
+				<!--顶部选项卡-->
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1">
+						综合排序
+					</a>
+					<a class="mui-control-item" href="#item2">
+						距离最近
+					</a>
+					<a class="mui-control-item" href="#item3">
+						价格最低
+					</a>
+					<a class="mui-control-item" href="#item4">
+						好评最多
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<!--滑动盒子-->
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--商家信息列表-->
+							<ul class="mui-shop-table-view">
+								<li class="mui-shop-table-view-cell">
+									<!--商家信息图片-->
+									<a href="../shop/shop-detail.html">
+										<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+									</a>
+
+									<div class="mui-shop-table-view-cell-content">
+										<!--商家名称-->
+										<div class="mui-shop-table-view-content-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+												<span>星沙汽配城</span>
+											</a>
+											<span class="mui-shop-table-view-cell-space">1.5km</span>
+										</div>
+
+										<!--商家地址-->
+										<div class="mui-shop-table-view-cell-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+												<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面</span>
+											</a>
+										</div>
+										<!--商家电话-->
+										<div>
+
+										</div>
+										<!--商家评级-->
+										<div class="mui-shop-table-view-cell-info-star">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+												<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+											</a>
+											<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">95599</span>
+										</div>
+
+									</div>
+								</li>
+								<li class="mui-shop-table-view-cell">
+									<!--商家信息图片-->
+									<a href="../shop/shop-detail.html">
+										<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+									</a>
+
+									<div class="mui-shop-table-view-cell-content">
+										<!--商家名称-->
+										<div class="mui-shop-table-view-content-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+												<span>星沙汽配城</span>
+											</a>
+											<span class="mui-shop-table-view-cell-space">1.5km</span>
+										</div>
+
+										<!--商家地址-->
+										<div class="mui-shop-table-view-cell-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+												<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面</span>
+											</a>
+										</div>
+										<!--商家电话-->
+										<div>
+
+										</div>
+										<!--商家评级-->
+										<div class="mui-shop-table-view-cell-info-star">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+												<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+											</a>
+											<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">10086</span>
+										</div>
+
+									</div>
+								</li>
+								</li>
+								<li class="mui-shop-table-view-cell">
+									<!--商家信息图片-->
+									<a href="../shop/shop-detail.html">
+										<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+									</a>
+
+									<div class="mui-shop-table-view-cell-content">
+										<!--商家名称-->
+										<div class="mui-shop-table-view-content-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+												<span>星沙汽配城</span>
+											</a>
+											<span class="mui-shop-table-view-cell-space">1.5km</span>
+										</div>
+
+										<!--商家地址-->
+										<div class="mui-shop-table-view-cell-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+												<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面</span>
+											</a>
+										</div>
+										<!--商家电话-->
+										<div>
+
+										</div>
+										<!--商家评级-->
+										<div class="mui-shop-table-view-cell-info-star">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+												<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+											</a>
+											<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">10010</span>
+										</div>
+
+									</div>
+								</li>
+								</li>
+								<li class="mui-shop-table-view-cell">
+									<!--商家信息图片-->
+									<a href="../shop/shop-detail.html">
+										<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+									</a>
+
+									<div class="mui-shop-table-view-cell-content">
+										<!--商家名称-->
+										<div class="mui-shop-table-view-content-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+												<span>星沙汽配城</span>
+											</a>
+											<span class="mui-shop-table-view-cell-space">1.5km</span>
+										</div>
+
+										<!--商家地址-->
+										<div class="mui-shop-table-view-cell-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+												<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面</span>
+											</a>
+										</div>
+										<!--商家电话-->
+										<div>
+
+										</div>
+										<!--商家评级-->
+										<div class="mui-shop-table-view-cell-info-star">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+												<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+											</a>
+											<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">10000</span>
+										</div>
+
+									</div>
+								</li>
+								</li>
+								<li class="mui-shop-table-view-cell">
+									<!--商家信息图片-->
+									<a href="../shop/shop-detail.html">
+										<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+									</a>
+
+									<div class="mui-shop-table-view-cell-content">
+										<!--商家名称-->
+										<div class="mui-shop-table-view-content-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+												<span>星沙汽配城</span>
+											</a>
+											<span class="mui-shop-table-view-cell-space">1.5km</span>
+										</div>
+
+										<!--商家地址-->
+										<div class="mui-shop-table-view-cell-info">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+												<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面</span>
+											</a>
+										</div>
+										<!--商家电话-->
+										<div>
+
+										</div>
+										<!--商家评级-->
+										<div class="mui-shop-table-view-cell-info-star">
+											<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+												<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+											</a>
+											<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">10011</span>
+										</div>
+
+									</div>
+								</li>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-shop-table-view">
+						<li class="mui-shop-table-view-cell">
+							<!--商家信息图片-->
+							<a href="../shop/shop-detail.html">
+								<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+							</a>
+
+							<div class="mui-shop-table-view-cell-content">
+								<!--商家名称-->
+								<div class="mui-shop-table-view-content-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+										<span>星沙汽配城</span>
+									</a>
+									<span class="mui-shop-table-view-cell-space">1.5km</span>
+								</div>
+
+								<!--商家地址-->
+								<div class="mui-shop-table-view-cell-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+										<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面</span>
+									</a>
+								</div>
+								<!--商家电话-->
+								<div>
+
+								</div>
+								<!--商家评级-->
+								<div class="mui-shop-table-view-cell-info-star">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+										<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+									</a>
+									<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">95599</span>
+								</div>
+
+							</div>
+						</li>
+						<li class="mui-shop-table-view-cell">
+							距离最近选项卡子项-2
+						</li>
+						<li class="mui-shop-table-view-cell">
+							距离最近选项卡子项-3
+						</li>
+						<li class="mui-shop-table-view-cell">
+							距离最近选项卡子项-4
+						</li>
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul class="mui-shop-table-view">
+						<li class="mui-shop-table-view-cell">
+							<!--商家信息图片-->
+							<a href="../shop/shop-detail.html">
+								<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+							</a>
+
+							<div class="mui-shop-table-view-cell-content">
+								<!--商家名称-->
+								<div class="mui-shop-table-view-content-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+										<span>星沙汽配城</span>
+									</a>
+									<span class="mui-shop-table-view-cell-space">1.5km</span>
+								</div>
+
+								<!--商家地址-->
+								<div class="mui-shop-table-view-cell-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+										<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面</span>
+									</a>
+								</div>
+								<!--商家电话-->
+								<div>
+
+								</div>
+								<!--商家评级-->
+								<div class="mui-shop-table-view-cell-info-star">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+										<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+									</a>
+									<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">95599</span>
+								</div>
+
+							</div>
+						</li>
+						<li class="mui-shop-table-view-cell">
+							价格最低选项卡子项-2
+						</li>
+						<li class="mui-shop-table-view-cell">
+							价格最低选项卡子项-3
+						</li>
+						<li class="mui-shop-table-view-cell">
+							价格最低选项卡子项-4
+						</li>
+					</ul>
+				</div>
+				<div id="item4" class="mui-control-content">
+					<ul class="mui-shop-table-view">
+						<li class="mui-shop-table-view-cell">
+							<!--商家信息图片-->
+							<a href="../shop/shop-detail.html">
+								<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+							</a>
+
+							<div class="mui-shop-table-view-cell-content">
+								<!--商家名称-->
+								<div class="mui-shop-table-view-content-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+										<span>星沙汽配城</span>
+									</a>
+									<span class="mui-shop-table-view-cell-space">1.5km</span>
+								</div>
+
+								<!--商家地址-->
+								<div class="mui-shop-table-view-cell-info">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+										<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面</span>
+									</a>
+								</div>
+								<!--商家电话-->
+								<div>
+
+								</div>
+								<!--商家评级-->
+								<div class="mui-shop-table-view-cell-info-star">
+									<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+										<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+									</a>
+									<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">95599</span>
+								</div>
+
+							</div>
+						</li>
+						<li class="mui-shop-table-view-cell">
+							好评最多选项卡子项-2
+						</li>
+						<li class="mui-shop-table-view-cell">
+							好评最多选项卡子项-3
+						</li>
+						<li class="mui-shop-table-view-cell">
+							好评最多选项卡子项-4
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.js"></script>
+		<script src="../js/own.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			//			mui.plusReady(function() {
+			//				addListevent();
+			//			})
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+				/*点击事件*/
+				addListevent();
+			})(mui);
+
+			function plusReady() {}
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+
+			function dialTest() {
+				var lis = document.getElementsByClassName('dial-span')
+				for(var i = 0; i < lis.length; i++) {
+					lis[i]._index = i;
+					lis[i].onclick = function() {
+						var m = lis[this._index].innerHTML;
+						plus.device.dial(m, false);
+
+					};
+				}
+
+			}
+
+			//			}
+			/*点击事件*/
+			function addListevent() {
+				mui('#mui-content').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					var title = this.innerText;
+					var isBars = false;
+					var barsIcon = '';
+					var aniShow = getaniShow();
+					pushWebView({
+						webType: 'newWebview_First',
+						id: id,
+						href: href,
+						aniShow: aniShow,
+						title: title,
+						isBars: isBars,
+						barsIcon: barsIcon,
+						extendOptions: {}
+					})
+				});
+			}
+		</script>
+	</body>
+
+</html>

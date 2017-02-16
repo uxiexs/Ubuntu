@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>index</title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/own.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/own.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			.mui-active .mui-icon,
+			.mui-active .mui-tab-label {
+				color: #41cea9;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--顶部导航栏背景色 大小 样式-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<div style="height: 30px;" id="indexDiv">
+				<!--顶部导航栏标题-->
+				<h1 id="nav-title" class="mui-title" style></h1>
+				<!--选择城市-->
+				<div id="home-checkcity-div">
+					<a href="home/city.html" style="" id="home-checkcity" style="">
+					</a>
+				</div>
+
+				<!--搜索输入框-->
+				<input type="search" class="mui-input-clear" placeholder="" id="home-search">
+				<!--搜索图标-->
+				<a id="searchButton" title="Search Pages" class="sitemapToolbarButton" href=""></a>
+			</div>
+		</header>
+		<!--底部栏图标-->
+		<nav class="mui-bar mui-bar-tab">
+			<!--首页-->
+			<a id="defaultTab" class="mui-tab-item mui-active" href="barItem/home.html">
+				<!--首页icon-->
+				<span class="mui-icon iconfont icon-Home"></span>
+				<!--首页文字-->
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<!--门店-->
+			<a class="mui-tab-item" href="barItem/shop.html">
+				<!--门店icon-->
+				<span class="mui-icon iconfont icon-Shop"></span>
+				<!--门店文字-->
+				<span class="mui-tab-label">门店</span>
+			</a>
+			<!--商城-->
+			<a class="mui-tab-item" href="barItem/mall.html">
+				<!--商城icon-->
+				<span class="mui-icon iconfont icon-Mall"></span>
+				<!--商城文字-->
+				<span class="mui-tab-label">商城</span>
+			</a>
+			<!--我的-->
+			<a class="mui-tab-item" href="barItem/mine.html">
+				<!--我的icon-->
+				<span class="mui-icon iconfont icon-Mine"></span>
+				<!--我的文字-->
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+	<script src="js/ajax.js" charset="UTF-8"></script>
+	<script src="/js/mui.indexedlist.js"></script>
+	<script src="js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		/*mui初始化*/
+		mui.init({
+			swipeBack: false
+		});
+		/*顶部导航栏标题*/
+		var navTitle;
+		/*页面主要内容*/
+		var mainWebview;
+		/*当前导航栏对应页面内容*/
+		var curBarItemWebview; //
+		/*底部导航栏数组*/
+		var barItemWebviewArray = [];
+		/*URL*/
+		var thisURL;
+		/*分隔url传值步骤1*/
+		var getval;
+		/*分隔url传值步骤2*/
+		var showval;
+		/*底部导航栏item*/
+		var loca;
+		var barItemArray = ['barItem/home.html', 'barItem/shop.html', 'barItem/mall.html', 'barItem/mine.html', 'mall/goods_details.html'];
+		mui.plusReady(function() {
+			//获取当前title和当前webview
+			navTitle = document.querySelector('.mui-title');
+			//当前页面内容
+			mainWebview = plus.webview.currentWebview();
+			plus.navigator.setStatusBarBackground("#41cea9");
+			//设置只支持竖屏幕显示
+			plus.screen.lockOrientation("portrait-primary");
+			//初始化与index有关的页面
+			thisURL = document.URL;
+			getval = thisURL.split('=')[1];
+			showval = decodeURI(getval);
+			initIndexView();
+			addListevent();
+			//检测是否需要显示导航页面todo
+			//判断是否已经登陆,若没有登陆将预加载登陆页面
+			//			judgelogin();
+			//			//预加载父子模版
+			initTemplate();
+			//						document.getElementById('home-checkcity').innerHTML="东莞"; 
+			jQuery(function($) {
+				var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+				$.getJSON(url, function(data) {
+					var ip = data.Ip;
+					$.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=' + ip,
+						function(_result) {
+							console.debug(remote_ip_info);
+							if(remote_ip_info.ret == '1') {
+								// console.debug('IP 详细信息：IP：'+ip+'<BR>国家：'+remote_ip_info.country+'<BR>省份：'+remote_ip_info.province+'<BR>城市：'+remote_ip_info.city+'<BR>区：'+remote_ip_info.district+'<BR>ISP：'+remote_ip_info.isp+'<BR>类型：'+remote_ip_info.type+'<BR>其他：'+remote_ip_info.desc);
+								//								location.innerHTML = remote_ip_info.city;
+								loca = remote_ip_info.city;
+								//								plus.nativeUI.toast(remote_ip_info.city);
+								showValue(loca);
+							} else {
+								console.debug('错误', '没有找到匹配的 IP 地址信息！');
+
+							}
+						});
+				});
+			});
+		});
+
+		//初始化
+		function initIndexView() {
+			//初始化所有bar页面
+			inittabitemWebviews();
+			//			showValue();
+			//添加bar点击事件接受
+			tapBaritem();
+		}
+
+		//初始化所有bar页面
+		function inittabitemWebviews() {
+			for(var i = 0; i < barItemArray.length; i++) {
+				barItemWebviewArray[i] = mui.preload({
+					id: barItemArray[i],
+					url: barItemArray[i],
+					styles: {
+						top: '44px',
+						bottom: '51px',
+						left: '0px',
+						bounce: 'vertical',
+						bounceBackground: '#f8f8f8'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+				barItemWebviewArray[i].hide();
+				mainWebview.append(barItemWebviewArray[i]);
+			}
+			barItemWebviewArray[0].show();
+			curBarItemWebview = barItemWebviewArray[0];
+		}
+
+		//添加点击事件
+		function tapBaritem() {
+			mui('.mui-bar-tab').on('tap', '.mui-tab-item', function() {
+				var baritem = this;
+				var baritemurl = baritem.getAttribute('href');
+				//indexof()如果为false返回－1所以前面加上~
+				if(!~curBarItemWebview.getURL().indexOf(baritemurl)) {
+					for(var i = 0; i < barItemArray.length; i++) {
+						if(barItemArray[i] == baritemurl) {
+							//更改头部名字
+							navTitle.innerText = baritem.children[baritem.children.length - 1].innerText;
+							if(barItemArray[i] == 'barItem/mine.html') {
+								navTitle.innerText = '个人中心';
+								/*个人中心不需要搜索图标 因此将不显示搜索图标*/
+								document.getElementById('searchButton').style.display = "none";
+								document.getElementById('home-search').style.display = "none";
+								document.getElementById('home-checkcity').style.display = "none";
+							}
+							if(barItemArray[i] == 'barItem/shop.html') {
+								navTitle.innerText = '全部门店';
+								document.getElementById('searchButton').style.display = "block";
+								document.getElementById('home-search').style.display = "none";
+								document.getElementById('home-checkcity').style.display = "none";
+							}
+							if(barItemArray[i] == 'barItem/home.html') {
+								navTitle.innerText = '';
+								document.getElementById('searchButton').style.display = "block";
+								/*首页顶部栏搜索框*/
+								document.getElementById('home-search').style.display = "block";
+								document.getElementById('home-checkcity').style.display = "block";
+							}
+							if(barItemArray[i] == 'barItem/mall.html') {
+								navTitle.innerText = '全部商品';
+								document.getElementById('searchButton').style.display = "block";
+								document.getElementById('home-search').style.display = "none";
+								document.getElementById('home-checkcity').style.display = "none";
+							}
+							if(barItemArray[i] == 'home/details.html') {
+								navTitle.innerText = '商品详情';
+								document.getElementById('searchButton').style.display = "block";
+								document.getElementById('home-search').style.display = "none";
+								document.getElementById('home-checkcity').style.display = "none";
+							}
+							//切换baritemwebview
+							barItemWebviewArray[i].show();
+							curBarItemWebview = barItemWebviewArray[i];
+							break;
+						}
+					}
+				}
+			});
+		}
+
+		//预加载template
+		function initTemplate() {
+			var webview = mui.preload({
+				id: 'template',
+				url: 'template.html',
+				styles: {
+					top: '-1000px',
+				}
+			});
+			webview.show();
+		};
+		//			function judgelogin() {
+		//				//测试语句
+		//				localStorage.removeItem('user');
+		//				//判断是否已经登录成功//localstorage在页面关闭的时候也同样存在，sessionstorage页面关闭数据不存在
+		//				if (!localStorage.getItem('user')) {
+		//					mui.preload({
+		//						url: 'mine/login.html',
+		//						id: 'mine/login.html',
+		//						styles: {
+		//							top: '0px',
+		//							bottom: '0px'
+		//						}
+		//					});
+		//				}
+		//			}
+		function showValue(loca) {
+			if(showval !== "undefined") {
+				document.getElementById('home-checkcity').innerHTML = showval + "<img src='img/home/icon/location.png' class='home-checkcity-icon' alt=''/>";
+			} else {
+				document.getElementById('home-checkcity').innerHTML = loca + "<img src='img/home/icon/location.png' class='home-checkcity-icon' alt=''/>";
+				//				document.getElementById('home-checkcity').innerHTML = "东莞" + "<img src='img/home/icon/location.png' class='home-checkcity-icon' alt=''/>";
+			}
+		}
+		/*点击事件*/
+		function addListevent() {
+			mui('#home-checkcity-div').on('tap', 'a', function() {
+				var id = this.getAttribute('href');
+				var href = this.href;
+				var title = this.innerText;
+				var isBars = false;
+				var barsIcon = '';
+				var aniShow = getaniShow();
+				pushWebView({
+					webType: 'newWebview_First',
+					id: id,
+					href: href,
+					aniShow: aniShow,
+					title: title,
+					isBars: isBars,
+					barsIcon: barsIcon,
+					extendOptions: {}
+				})
+			});
+		}
+	</script>
+
+</html>

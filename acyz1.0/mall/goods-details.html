@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/own.css" />
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">商品详情</h1>
+		</header>
+		<!--页面内容区域-->
+		<div class="mui-content">
+			<div id="goodsinfoDiv" class="mui-mall-goodsinfo">
+				<!--商品详情头部区域-->
+				<div id="mui-mall-goodsinfo-head">
+					<!--头部图片盒子-->
+					<div id="mui-mall-goodsinfo-head-image"><img src="../img/mall/goods/big/ex-big.png" alt="" />
+						<hr />
+					</div>
+					<!--头部标题盒子-->
+					<div>
+						<!--商品标题-->
+						<span id="mui-mall-goodsinfo-head-title">壳牌(Shell)黄喜力HelixHX5 10W-40优质多级润滑油 SN  4L</span><br />
+						<!--商品价格-->
+						<span id="mui-mall-goodsinfo-head-price">￥128</span>
+						<!--立即购买-->
+						<span id="mui-mall-goodsinfo-head-buy-span">
+						<a href="../mall/add-address.html" id="mui-mall-goodsinfo-head-buy"></a>
+					</span>
+						<!--销量-->
+						<span id="mui-mall-goodsinfo-saleNum">
+						已售100000件
+					</span>
+					</div>
+				</div>
+				<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+				<div id="mui-mall-goodsinfo-body">
+					商品描述
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/own.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			var currentWebView;
+			var goodsinfoDiv;
+			mui.plusReady(function() {
+				/*当前页面内容*/
+				currentWebview = plus.webview.currentWebview();
+				/*商品详情内容*/
+				goodsinfoDiv = plus.webview.goodsinfoDiv;
+				/*点击事件*/
+				addListevent();
+			});
+
+			function addListevent() {
+				mui('#mui-mall-goodsinfo-head').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					var title = this.innerText;
+					var isBars = false;
+					var barsIcon = '';
+					var aniShow = getaniShow();
+					pushWebView({
+						webType: 'newWebview_First',
+						id: id,
+						href: href,
+						aniShow: aniShow,
+						title: title,
+						isBars: isBars,
+						barsIcon: barsIcon,
+						extendOptions: {}
+					})
+				});
+			}
+		</script>
+	</body>
+
+</html>

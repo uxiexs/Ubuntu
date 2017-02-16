@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/own.css" />
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">中奖登记页面</h1>
+		</header>
+		<div class="mui-content">
+			<div>
+				<form class="mui-input-group">
+					<div class="mui-input-row">
+						<label>姓名</label>
+						<input type="text" name="raffle-name" id="raffleName" class="mui-input-clear" pattern="^[\u4e00-\u9fa5]*$" placeholder="输入您的真实姓名" data-min="2" data-max="10" required>
+					</div>
+					<div class="mui-input-row">
+						<label>手机</label>
+						<input type="tel" name="raffle-mobile" class="mui-input-clear" id="TEL" placeholder="输入您的手机号码" required>
+					</div>
+					<div class="mui-input-row">
+						<label>地址</label>
+						<input type="text" name="raffle-address" id="raffle-address" class="mui-input-clear" placeholder="输入您的联系地址" pattern="([^\x00-\xff]|[A-Za-z0-9_])+" data-min="8" data-max="20" required>
+					</div>
+					<div class="mui-button-row">
+						<button type="submit" class="mui-btn mui-btn-danger">提交</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/own.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*ajax提交表单*/
+			$('form').submit(function() {
+				var name_obj = document.getElementById('raffleName');
+				var name = name_obj.value;
+				var mobile_obj = document.getElementById('TEL');
+				var mobile = mobile_obj.value;
+				var address_obj = document.getElementById('raffle-address');
+				var address = address_obj.value;
+				var flag = false;
+
+				if(name == "") {
+					plus.nativeUI.toast('姓名不能为空哦,亲');
+					name_obj.focus();
+					flag = false;
+					return false;
+				}
+				if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)) {
+					plus.nativeUI.toast('请输入11位的有效手机号码');
+					mobile_obj.focus();
+					flag = false;
+					return false;
+				}
+				if(address.length < 8) {
+					plus.nativeUI.toast('地址长度不能小于8个字符');
+					address_obj.focus();
+					flag = false;
+					return false;
+				}
+				if(name !== "" && /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile) && address !== "") {
+					flag = true;
+				}
+				$.ajax({
+					url: "http://uxeix.youlinhd.cn/1_TPshop/index.php",
+					data: {
+						/*姓名*/
+						Name: function() {
+							return name;
+						},
+						/*手机*/
+						Mobile: function() {
+							return mobile;
+						},
+						/*地址*/
+						Address: function() {
+							return address;
+						},
+
+					},
+					dataType: 'text',
+					type: 'POST',
+					async: false,
+					success: function(data) {
+						if(name && mobile && address && flag) {
+							plus.nativeUI.toast('提交成功，客服人员将在2个工作日之内与您联系，确认奖品投递');
+									mui.openWindow({
+								url: '../../index1.html',
+								id: 'index1',
+								show: {
+									aniShow: 'pop-in'
+								}
+							});
+						}
+
+					},
+				})
+				return false;
+
+			});
+		</script>
+	</body>
+
+</html>

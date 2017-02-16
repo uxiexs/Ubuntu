@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/own.css" />
+	</head>
+
+	<body class="maintence-pay-body">
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">支付</h1>
+		</header>
+		<div class="mui-content" id="miantencePayDiv">
+			<!--服务项目-->
+			<div class="mui-content-maintence-head-div">
+				<div class="mui-content-maintence-price-div">
+					<span class="mui-content-maintence-price-txt">洗车 </span>
+					<span class="mui-content-maintence-price">￥25</span>
+				</div>
+				<div class="mui-content-maintence-num-div">
+					<span class="mui-content-maintence-num-txt">数量&nbsp;:&nbsp;</span>
+					<div id="numBtn" class="mui-numbox" data-numbox-min='1' data-numbox-max='999'>
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input id="test" class="mui-input-numbox" type="number" value="1" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					</div>
+				</div>
+
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<div class="mui-content-maintence-useCoupon-div">
+				<form action="" id="couponFrom">
+					<input type="checkbox" />
+					<span class="mui-content-maintence-useCoupon">使用优惠券</span>
+				</form>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<div class="mui-content-maintence-confirm-mobile-div">
+				<span class="mui-content-maintence-confirm-mobile">确认手机号码&nbsp;:&nbsp;18679053667</span>
+				<a href="" class="mui-content-maintence-change-mobile"><span>[修改]</span></a>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<div class="mui-content-maintence-pay-mothod-div">
+				<label for="" class="mui-content-maintence-pay-mothod-title">支付方式</label><br />
+				<div class="mui-content-maintence-pay-mothod-icon">
+					<div class="mui-input-row mui-radio mui-left">
+						<label>微信支付</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>支付宝支付</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+				</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<div class="mui-content-maintence-order-price-div">
+				<span class="mui-content-maintence-order-price-txt">订单总价</span><span class="mui-content-maintence-order-price">￥25</span>
+			</div>
+			<!--购买按钮-->
+			<div class="mui-content-maintence-pay--btn-div">
+				<a href="miantence-pay-success.html">
+					<div class="mui-btn mui-btn-danger" id="mui-content-maintence-pay-btn">立即支付</div>
+				</a>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

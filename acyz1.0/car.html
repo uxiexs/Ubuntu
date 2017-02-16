@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/own.css" />
+		<style type="text/css">
+			.area {
+				margin: 20px auto 0px auto;
+			}
+			
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			
+			.mui-input-group label {
+				width: 40%;
+			}
+			
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 60%;
+			}
+			
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body id="carBody">
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">完善车辆信息</h1>
+		</header>
+		<!--页面内容区域-->
+		<div class="mui-content" id="carDiv">
+			<!--logo 头部区域-->
+			<div class="mui-content-car-logoArea">
+				<!--logo-->
+				<div class="mui-content-car-logo">
+					<img src="img/car/logo.ico" alt="" class="mui-content-car-logo-icon" />
+				</div>
+				<!--介绍区域-->
+				<div class="mui-content-car-intro">
+					<span class="mui-content-car-intro-txt1">欢迎您使用爱车驿站</span><br />
+					<span class="mui-content-car-intro-txt2">为了更好的享受该应用服务,请先去完善您的爱车信息</span>
+				</div>
+			</div>
+			<!--车辆信息登记-->
+			<div class="mui-content-car-info">
+				<form class="mui-input-group" style="border: 1px solid #555555;" id="carFrom">
+					<div class="mui-input-row">
+						<label>车主</label>
+						<input id='nickname' name="nickname" type="text" class="mui-input-clear mui-input" placeholder="请输入车主姓名" required>
+					</div>
+					<div class="mui-input-row">
+						<label>车牌号</label>
+						<input id='plate' name="plate" type="text" class="mui-input-clear mui-input" placeholder="请输入车牌号码" required>
+					</div>
+					<div class="mui-input-row">
+						<label>车架号</label>
+						<input id='carriage' name="carriage" type="text" class="mui-input-clear mui-input" placeholder="请输入车架号码" required>
+					</div>
+					<div class="mui-input-row">
+						<label>发动机号</label>
+						<input id='engine' name="engine" type="text" class="mui-input-clear mui-input" placeholder="请输入发动机号" required>
+					</div>
+					<div class="mui-input-row">
+						<label class="mui-input-car-date">发动机登记日</label>
+						<input id='rigister' name="rigister" type="date" class="mui-input-clear mui-input" placeholder="发动机初始登记日期" required>
+					</div>
+					<div class="mui-input-row">
+						<label class="mui-input-car-date">车辆品牌型号</label>
+						<input id='engineType' name="engineType" type="text" class="mui-input-clear mui-input" placeholder="请输入车辆品牌型号" required>
+					</div>
+					<div style="text-align: center; margin:0 auto;">
+						<input type="submit" id="ajaxSubmit" value="提交" />
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/own.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.plusReady(function() {
+				var nickname = document.getElementById('nickname');
+				var plate = document.getElementById('plate');
+				var carriage = document.getElementById('carriage');
+				var engine = document.getElementById('engine');
+				var rigister = document.getElementById('rigister');
+				var engineType = document.getElementById('engineType');
+				//				nickname.focus();
+				/*车主姓名检测*/
+				$("#nickname").on('blur', function() {
+					if(nickname.value == '') {
+						plus.nativeUI.toast('车主姓名不能为空');
+						nickname.focus();
+						//							return;
+					}
+				});
+				/*车牌号检测*/
+				$("#plate").on('blur', function() {
+					if(!/(^[\u4E00-\u9FA5]{1}[A-Z0-9]{6}$)|(^[A-Z]{2}[A-Z0-9]{2}[A-Z0-9\u4E00-\u9FA5]{1}[A-Z0-9]{4}$)|(^[\u4E00-\u9FA5]{1}[A-Z0-9]{5}[挂学警军港澳]{1}$)|(^[A-Z]{2}[0-9]{5}$)|(^(08|38){1}[A-Z0-9]{4}[A-Z0-9挂学警军港澳]{1}$)/.test(plate.value)) {
+						plus.nativeUI.toast('车牌号码不合法哦');
+						plate.focus();
+						//							return;
+					}
+				});
+				/*车架号*/
+				$("#carriage").on('blur', function() {
+					if(carriage.value == '') {
+						plus.nativeUI.toast('车架号码不能为空哦');
+						carriage.focus();
+						//							return;
+					}
+				});
+				/*发动机号*/
+				$("#engine").on('blur', function() {
+					if(engine.value == '') {
+						plus.nativeUI.toast('发动机号不能为空哦');
+						engine.focus();
+						//							return;
+					}
+				});
+				$("#rigister").on('blur', function() {
+					if(rigister.value == '') {
+						plus.nativeUI.toast('请选择发动机初始登记日期');
+						rigister.focus();
+						//							return;
+					}
+
+				});
+				/*车辆品牌型号*/
+				$("#engineType").on('blur', function() {
+					if(engineType.value == '') {
+						plus.nativeUI.toast('车辆品牌型号不能为空哦');
+						engineType.focus();
+						//							return;
+					}
+				});
+
+				/*ajax提交表单*/
+				$('form').submit(function() {
+//					var s = ($(this).serialize());
+					var strNickName = nickname.value;
+					var strPlate = plate.value;
+					var strCarriage = carriage.value;
+					var strEngine = engine.value;
+					var strRigister = rigister.value;
+					var strEngineType = engineType.value;
+					
+					//				alert(s);
+					//				return false;
+					$.ajax({
+						url: "http://uxeix.youlinhd.cn/1_TPshop/index.php",
+						data: {
+							/*车主姓名*/
+							NickName: function() {
+								return strNickName;
+							},
+							/*车牌号*/
+							Plate: function() {
+								return strPlate;
+							},
+							/*车架号*/
+							Carriage: function() {
+								return strCarriage;
+							},
+							/*发动机号*/
+							Engine: function() {
+								return strEngine;
+							},
+							/*发动机初始登记日期*/
+							Rigister: function() {
+								return strRigister;
+							},
+							/*车辆品牌型号*/
+							EngineType: function() {
+								return strEngineType;
+							},
+
+						},
+						dataType: 'text',
+						type: 'POST',
+						async: false,
+						success: function(data) {
+							if(strNickName == "" || strPlate == "" || strEngine == "" || strCarriage == "" || strEngineType == "" || strRigister == "") {
+								plus.nativeUI.toast('内容不能留空哦,亲');
+								return false;
+							} else {
+								plus.nativeUI.toast('提交成功');
+								mui.openWindow({
+									url: 'index.html',
+									id: 'index',
+									preload: true,
+									show: {
+										aniShow: 'pop-in'
+									},
+									styles: {
+										popGesture: 'hide'
+									},
+									waiting: {
+										autoShow: false
+									}
+								});
+							}
+
+						},
+					})
+					return false;
+
+				});
+			});
+
+			//			function check() {
+			//
+			//				if(nickname.value == "") {
+			//					plus.nativeUI.toast('车主姓名不能为空哦');
+			//					return false;
+			//				}
+			//				if(!/(^[\u4E00-\u9FA5]{1}[A-Z0-9]{6}$)|(^[A-Z]{2}[A-Z0-9]{2}[A-Z0-9\u4E00-\u9FA5]{1}[A-Z0-9]{4}$)|(^[\u4E00-\u9FA5]{1}[A-Z0-9]{5}[挂学警军港澳]{1}$)|(^[A-Z]{2}[0-9]{5}$)|(^(08|38){1}[A-Z0-9]{4}[A-Z0-9挂学警军港澳]{1}$)/.test(plate.value)) {
+			//					plus.nativeUI.toast('车牌号码不合法哦');
+			//					return false;
+			//				}
+			//				if(carriage.value == "") {
+			//					plus.nativeUI.toast('车架号码不能为空哦');
+			//					return false;
+			//				}
+			//				if(engine.value == "") {
+			//					plus.nativeUI.toast('发动机号码不能为空哦');
+			//					return false;
+			//				}
+			//				if(rigister.value == "") {
+			//					plus.nativeUI.toast('请选择发动机初始登记日哦');
+			//					return false;
+			//				}
+			//				if(engineType.value == "") {
+			//					plus.nativeUI.toast('车辆品牌型号不能为空哦');
+			//					return false;
+			//				}
+			//			}
+		</script>
+	</body>
+
+</html>

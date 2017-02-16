@@ -1,0 +1,557 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"barItem/home.html",
+			"js/ajax.js",
+			"css/own.css",
+			"images/search.png",
+			"images/232_search_16.png",
+			"images/transparent.gif",
+			"img/search.png",
+			"img/search3.png",
+			"img/search5.png",
+			"css/mui.css",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"home/city.html",
+			"js/own.js",
+			"img/home/icon/location.png",
+			"js/app.js",
+			"images/sinaweibo.png",
+			"images/weixin.png",
+			"images/qq.png",
+			"js/mui.enterfocus.js"
+		],
+		"refer": [
+			"barItem/home.html",
+			"barItem/mine.html",
+			"barItem/shop.html",
+			"barItem/mall.html",
+			"template.html",
+			"home/city.html",
+			"home/maintence.html",
+			"home/raffle.html",
+			"main.html",
+			"reg.html",
+			"index1.html",
+			"forget_password.html"
+		]
+	},
+	"barItem/mall.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/own.js",
+			"img/slider/slider2.jpg",
+			"img/slider/slider1.jpg",
+			"img/slider/slider3.jpg",
+			"img/slider/slider4.png",
+			"img/search.png",
+			"fonts/mui.ttf",
+			"img/car/car4.png",
+			"img/car/car3.png",
+			"img/car/car2.png",
+			"img/car/car1.png",
+			"css/mui.css",
+			"img/mall/goods/ex.png",
+			"img/mall/goods/thumbnail/ex-mini.png"
+		],
+		"refer": [
+			"barItem/home.html",
+			"mall/goods-details.html"
+		]
+	},
+	"barItem/home.html": {
+		"resources": [
+			"images/232_search_16.png",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/mui.css",
+			"img/slider/slider2.jpg",
+			"img/slider/slider1.jpg",
+			"img/slider/slider3.jpg",
+			"img/slider/slider4.png",
+			"css/own.css",
+			"js/own.js",
+			"img/car/car1.png",
+			"img/shop/thumbnail/xsqpc-mini.jpg",
+			"css/iconfont-phone.css",
+			"fonts/iconfont.ttf",
+			"fonts/mui.ttf",
+			"home/maintence.html",
+			"home/raffle.html",
+			"shop/shop-detail.html",
+			"home/cards.html",
+			"home/package.html"
+		],
+		"refer": [
+			"shop/shop-detail.html",
+			"home/maintence.html",
+			"home/raffle.html",
+			"home/cards.html",
+			"home/package.html"
+		]
+	},
+	"barItem/shop.html": {
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"css/mui.css",
+			"css/own.css",
+			"img/shop/thumbnail/thumbnails.jpg",
+			"fonts/mui.ttf",
+			"css/iconfont-phone.css",
+			"fonts/iconfont.ttf",
+			"shop/shop-detail.html",
+			"js/own.js",
+			"js/mui.js",
+			"img/shop/thumbnail/xsqpc-mini.jpg"
+		],
+		"refer": [
+			"shop/shop-detail.html"
+		]
+	},
+	"barItem/mine.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.css",
+			"css/method.css",
+			"css/own.css",
+			"img/mine/ex.jpg",
+			"js/own.js"
+		],
+		"refer": [
+			"mine/service-order.html"
+		]
+	},
+	"template.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/own.css",
+			"js/own.js",
+			"js/mui.min.js",
+			"css/iconfont.css"
+		],
+		"refer": [
+			"template-main-third.html",
+			"template-main-second.html",
+			"template-main-first.html",
+			"mall/goods-details.html",
+			"mall/add-address.html",
+			"shop/shop-detail.html",
+			"home/city.html",
+			"home/maintence.html",
+			"home/raffle.html",
+			"home/cards.html",
+			"home/package.html",
+			"mine/service-order.html",
+			"mine/mall-order.html",
+			"mine/car-info.html",
+			"mine/recommend-info.html",
+			"mine/integral.html",
+			"mine/package.html",
+			"mine/coupons.html"
+		]
+	},
+	"template-main-third.html": {
+		"resources": [
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/iconfont.css"
+		],
+		"refer": []
+	},
+	"mall/goods-details.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.css",
+			"img/mall/goods/big/ex-big.png",
+			"img/mall/goods/others/buy.png",
+			"js/own.js"
+		],
+		"refer": []
+	},
+	"template-main-second.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/iconfont.css"
+		],
+		"refer": []
+	},
+	"mall/add-address.html": {
+		"resources": [
+			"js/geo.js",
+			"css/own.css",
+			"js/own.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.css",
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"js/city.data.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"js/city.data-3.js",
+			"mall/confrim-order.html"
+		],
+		"refer": [
+			"mall/confrim-order.html"
+		]
+	},
+	"template-main-first.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/iconfont.css"
+		],
+		"refer": []
+	},
+	"mall/confrim-order.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"img/mall/goods/thumbnail/ex-mini.png",
+			"css/mui.css",
+			"css/app.css"
+		],
+		"refer": [
+			"mall/goods-details.html",
+			"mall/use-address.html"
+		]
+	},
+	"mall/use-address.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"mall/add-address.html"
+		]
+	},
+	"shop/shop-detail.html": {
+		"resources": [
+			"img/shop/big/ex.jpg",
+			"fonts/mui.ttf",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/mui.css",
+			"img/shop/big/xsqpc-big.jpg",
+			"fonts/iconfont.ttf",
+			"css/iconfont-phone.css"
+		],
+		"refer": [
+			"shop/shop-comments.html"
+		]
+	},
+	"home/city.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.indexedlist.css",
+			"js/mui.indexedlist.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"index.html",
+			"css/own.css",
+			"js/jquery.min.js"
+		],
+		"refer": [
+			"index.html",
+			"index1.html"
+		]
+	},
+	"home/maintence.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/search5.png",
+			"img/home/maintence/service/car-wash.png",
+			"img/home/maintence/service/car-repair.png",
+			"img/home/maintence/service/car-beauty.png",
+			"img/home/maintence/service/car-maintain.png",
+			"img/shop/thumbnail/xsqpc-mini.jpg",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"css/iconfont-phone.css",
+			"js/own.js"
+		],
+		"refer": [
+			"home/maintence/maintence-detail.html"
+		]
+	},
+	"home/raffle.html": {
+		"resources": [
+			"css/mui.min.css",
+			"img/home/raffle/raffle.png",
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"home/raffle/raffle-detail.html"
+		],
+		"refer": [
+			"home/raffle/raffle-detail.html"
+		]
+	},
+	"home/package.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/search5.png",
+			"img/home/package/package.png",
+			"css/mui.css"
+		],
+		"refer": [
+			"shop/shop-detail.html",
+			"home/package/package-detail.html"
+		]
+	},
+	"home/package/package-detail.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"img/home/package/package.png",
+			"css/mui.css"
+		],
+		"refer": [
+			"home/package/package-pay.html"
+		]
+	},
+	"home/package/package-pay-success.html": {
+		"resources": [
+			"img/home/package/success.png",
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"shop/shop-detail.html",
+			"barItem/shop.html",
+			"index.html",
+			"shop/shop-area.html"
+		]
+	},
+	"home/package/package-pay.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/home/package/package.png"
+		],
+		"refer": [
+			"home/package/package-pay-success.html"
+		]
+	},
+	"home/raffle/raffle-detail.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/home/raffle/raffle.png"
+		],
+		"refer": [
+			"home/raffle/choujiang.html",
+			"home/raffle/choujiang1.html",
+			"home/raffle/raffle-lucklly.html"
+		]
+	},
+	"home/raffle/choujiang.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/mui.js"
+		],
+		"refer": []
+	},
+	"home/raffle/choujiang1.html": {
+		"resources": [
+			"home/raffle/images/turnplate-pointer.png",
+			"home/raffle/images/1.png",
+			"home/raffle/images/2.png",
+			"home/raffle/js/awardRotate.js",
+			"home/raffle/style.css",
+			"home/raffle/images/turnplate-bg.png",
+			"home/raffle/js/jquery-1.10.2.js"
+		],
+		"refer": [
+			"home/raffle/raffle-rigister.html"
+		]
+	},
+	"home/raffle/raffle-rigister.html": {
+		"resources": [
+			"js/jquery-1.6.4.min.js",
+			"js/jquery-html5Validate-min.js",
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"home/raffle/raffle-rigister.html",
+			"index1.html",
+			"home/raffle.html"
+		]
+	},
+	"reg.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/style.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery.min.js",
+			"js/jquery-html5Validate-min.js",
+			"js/app.js",
+			"css/own.css"
+		],
+		"refer": [
+			"index.html",
+			"carl.html",
+			"car.html"
+		]
+	},
+	"index1.html": {
+		"resources": [
+			"css/own.css",
+			"js/own.js",
+			"css/iconfont.css",
+			"barItem/home.html",
+			"js/ajax.js",
+			"fonts/iconfont.ttf",
+			"img/home/icon/location.png",
+			"css/mui.css",
+			"img/search5.png",
+			"js/mui.min.js",
+			"js/jquery-1.6.4.min.js",
+			"/js/mui.indexedlist.js"
+		],
+		"refer": [
+			"barItem/home.html",
+			"barItem/mine.html",
+			"template.html",
+			"barItem/shop.html",
+			"barItem/mall.html"
+		]
+	},
+	"carl.html": {
+		"resources": [
+			"img/car/logo.ico"
+		]
+	},
+	"car.html": {
+		"resources": [
+			"img/car/logo.ico",
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/jquery.min.js",
+			"index.html",
+			"post.php",
+			"car.html",
+			"js/own.js"
+		],
+		"refer": [
+			"car.html",
+			"index.html"
+		]
+	},
+	"forget_password.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/style.css",
+			"js/app.js",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery-1.6.4.min.js",
+			"js/layer.js"
+		],
+		"refer": [
+			"reset.html"
+		]
+	},
+	"reset.html": {
+		"resources": [
+			"css/own.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/jquery-1.6.4.min.js",
+			"js/own.js",
+			"js/jquery.min.js",
+			"js/mui.min.js"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"home/maintence/maintence-detail.html": {
+		"resources": [
+			"img/shop/big/xsqpc-big.jpg",
+			"css/iconfont-phone-big.css",
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		],
+		"refer": [
+			"home/maintence/shop-comments.html"
+		]
+	},
+	"home/raffle/raffle-lucklly.html": {
+		"resources": [
+			"img/home/raffle/turnplate-pointer.png",
+			"js/raffle/jquery-1.10.2.js",
+			"img/home/raffle/turnplate-bg.png",
+			"img/home/raffle/2.png",
+			"css/home/raffle/style.css",
+			"js/raffle/awardRotate.js"
+		],
+		"refer": [
+			"home/raffle/raffle-rigister.html"
+		]
+	},
+	"mine/service-order.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/own.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/home/package/package.png"
+		],
+		"refer": [
+			"mine/service-order/service-order-info.html"
+		]
+	},
+	"mine/service-order/service-order-info.html": {
+		"resources": [
+			"css/own.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/home/package/package.png"
+		]
+	}
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/own.css"/>
+	</head>
+
+	<body class="ownbody">
+			<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">支付结果</h1>
+		</header>
+		
+		<div class="mui-content ownContent">
+			<!--购买成功-->
+			<div class="mui-content-maintence-pay-success-tip-div">
+					<div class="mui-input-row mui-radio mui-left" id="successItem">
+						<label>购买成功</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--使用说明-->
+			<div class="mui-btn mui-content-maintence-pay-success-instructions-div ">
+				<!--服务项目名称-->
+				<div class="mui-content-maintence-pay-success-instructions-name-div">
+					<span class="mui-content-maintence-pay-success-instructions-name">洗车</span>
+				</div>
+				<!--二维码-->
+				<div class="mui-content-maintence-pay-success-instructions-code-div">
+					<img src="../../img/home/maintence/two-dimensional code.png" class="mui-content-maintence-pay-success-instructions-code"alt="" />
+				</div>
+				<!--兑换码-->
+				<div class="mui-content-maintence-pay-success-redeem-code-div">
+					<span class="mui-content-maintence-pay-success-redeem-code-txt">兑换码:</span><span class="mui-content-maintence-pay-success-redeem-code-content">44N7Y499</span>
+				</div>
+				<!--使用说明-->
+				<div class="mui-content-maintence-pay-success-instructions-txt-div">
+					<span class="mui-content-maintence-pay-success-instructions-txt-title"> 使用说明:	</span>
+					<span class="mui-content-maintence-pay-success-instructions-txt-content">提供兑换码或将二维码出示给门店验证,验证成功即可享受相应服务.</span>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

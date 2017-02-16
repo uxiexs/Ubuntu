@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/own.css" />
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body class="ownbody">
+		<div class="mui-content ownContent">
+			<!--个人信息-->
+			<div class="mui-content-mine-head-div">
+				<!--用户头像-->
+				<div class="mui-content-mine-head-img-div">
+					<img src="../img/mine/ex.jpg" alt="" class="mui-content-mine-head-img" />
+					<!--昵称-->
+					<span class="mui-content-mine-head-mobile">海贼王路飞(18888888888)</span>
+				</div>
+				<!--订单状态按钮-->
+				<div class="mui-content-mine-head-orderBtn-div">
+					<button type="button" class="mui-btn mine-pay">待付款<span class="mui-badge mine-style" style="background: #DD524D">1</span></button>
+					<button type="button" class="mui-btn">待确认<span class="mui-badge mine-style" style="background: #DD524D">1</span></button>
+					<button type="button" class="mui-btn">待评价<span class="mui-badge mine-style" style="background: #DD524D">1</span></button>
+					<button type="button" class="mui-btn">退款<span class="mui-badge mine-style" style="background: #DD524D">1</span></button>
+				</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+
+			<!--服务订单-->
+			<a href="../mine/service-order.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mui-content-mine-service-order mine-list-common">服务订单</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--商城订单-->
+			<a href="../mine/mall-order.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">商城订单</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--我的车辆信息-->
+			<a href="../mine/car-info.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">我的车辆信息</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--我的积分-->
+			<a href="../mine/integral.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">我的积分</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--我的优惠券-->
+			<a href="../mine/coupons.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">我的优惠券</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--我的优惠套餐-->
+			<a href="../mine/package.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">我的优惠套餐</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--被推荐人信息-->
+			<a href="../mine/recommend-info.html">
+				<div class="mui-content-mine-service-order-div">
+					<span class="mine-list-common">被推荐人信息</span>
+				</div>
+			</a>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/own.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.plusReady(function(){
+				addListevent();
+			})
+			/*点击事件*/
+			function addListevent() {
+				mui('.mui-content').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					var title = this.innerText;
+					var isBars = false;
+					var barsIcon = '';
+					var aniShow = getaniShow();
+					pushWebView({
+						webType: 'newWebview_First',
+						id: id,
+						href: href,
+						aniShow: aniShow,																														
+						title: title,
+						isBars: isBars,
+						barsIcon: barsIcon,
+						extendOptions: {}
+					})
+				});
+			}
+		</script>
+	</body>
+
+</html>

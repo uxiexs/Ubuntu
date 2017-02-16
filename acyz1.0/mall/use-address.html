@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/own.css" />
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">选择收货地址</h1>
+		</header>
+		<!--页面内容区域-->
+		<div class="mui-content">
+			<div class="useAdDiv">
+				<div id="use-address-default">
+					<span class="use-address-ul-name">黄晓红</span>
+					<span class="use-address-ul-mobile">13800138000</span>
+					<input type="radio" name="radio1" class="use-address-radio" checked><br />
+					<span class="use-address-ul-text">[默认地址]</span>
+					<span class="use-address-ul-deafult-content">广东省东莞市南城区银丰路88号301室</span>
+				</div>
+				<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+				<ul class="use-address-ul">
+					<li>
+						<div class="use-address-list">
+							<span class="use-address-ul-name">黄晓红</span>
+							<span class="use-address-ul-mobile">13800138000</span>
+							<input type="radio" name="radio1" class="use-address-radio"><br />
+							<span class="use-address-ul-text-content">广东省东莞市南城区银丰路88号301室</span>
+						</div>
+					</li>
+					<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+				</ul>
+				<!--新增-->
+				<div class="use-address-addDiv">
+					<a href="../mall/add-address.html">
+						<button type="button" class="mui-btn mui-btn-success mui-icon mui-icon-plus mui-right">新增</button>
+					</a>
+				</div>
+				<!--管理-->
+				<div class="use-address-delDiv">
+					<a href="">
+						<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">
+		           管理	
+		            <span class="mui-icon mui-icon-trash"></span>
+		        </button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			var currentWebView;
+			var goodsinfoDiv;
+			mui.plusReady(function() {
+				/*当前页面内容*/
+				currentWebview = plus.webview.currentWebview();
+				/*商品详情内容*/
+				goodsinfoDiv = plus.webview.goodsinfoDiv;
+				/*点击事件*/
+				addListevent();
+			});
+
+			function addListevent() {
+				mui('#use-address-default').on('tap', 'input', function() {
+					//										var id = this.getAttribute('href');
+					//					var href = this.href;
+					//					var title = this.innerText;
+					//					var isBars = false;
+					//					var barsIcon = '';
+					//					var aniShow = getaniShow();
+					//					pushWebView({
+					//						webType: 'newWebview_First',
+					//						id: id,
+					//						href: href,
+					//						aniShow: aniShow,
+					//						title: title,
+					//						isBars: isBars,
+					//						barsIcon: barsIcon,
+					//						extendOptions: {}
+					//					})
+					//					alert(1);
+				});
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.css">
+		<link rel="stylesheet" type="text/css" href="../css/own.css" />
+		<link rel="stylesheet" href="../css/iconfont-phone.css" />
+		<style type="text/css">
+			.mui-table-view:after {
+				height: 0px;
+			}
+			/*图片显示的时候设置为自动 因为 从服务器来的图片大小相同*/
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="homeDiv" class="mui-content own-content-padding">
+				<div id="mui-home-slider" class="mui-slider">
+				</div>
+				<!--分割线-->
+				<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99.5%" color=#DDD SIZE=1>
+				<!--服务图标区域-->
+				<ul id="mui-home-function-ul" class="mui-home-function">
+					<li id="mui-home-function-li">
+						<!--汽车保养-->
+						<div class="mui-home-function-sonDiv">
+							<a id="mui-home-function-sonDiv-maintence" class="mui-home-function-maintence" href="../home/maintence.html">
+								<span id="home-button1" class="mui-btn mui-btn-block mui-btn-outlined">汽车保养</span>
+								<!--<span class="mui-home-function-sonDiv-font">汽车保养</span>-->
+							</a>
+						</div>
+						<!--积分抽奖-->
+						<div class="mui-home-function-sonDiv">
+							<a id="mui-home-function-sonDiv-raffle " class="mui-home-function-raffle" href="../home/raffle.html">
+								<span id="home-button2" class="mui-btn mui-btn-block mui-btn-outlined">积分抽奖</span>
+								<!--<span class="mui-home-function-sonDiv-font">积分抽奖</span>-->
+							</a>
+						</div>
+						<!--优惠套餐-->
+						<div class="mui-home-function-sonDiv">
+							<a id="mui-home-function-sonDiv-package " class="mui-home-function-package" href="../home/package.html">
+								<span id="home-button3" class="mui-btn mui-btn-block mui-btn-outlined">优惠套餐</span>
+								<!--<span class="mui-home-function-sonDiv-font">优惠套餐</span>-->
+							</a>
+						</div>
+						<!--卡券包-->
+						<div class="mui-home-function-sonDiv">
+							<a id="mui-home-function-sonDiv-clear " class="mui-home-function-cards" href="../home/cards.html">
+								<span id="home-button4" class="mui-btn mui-btn-block mui-btn-outlined">卡券包</span>
+								<!--<span class="mui-home-function-sonDiv-font">卡券包</span>-->
+							</a>
+						</div>
+					</li>
+				</ul>
+
+				
+				<!--商家信息列表-->
+				<ul class="mui-shop-table-view" id="home-area-ul">
+									<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99.5%" color=#DDD SIZE=1>
+
+									<!--附近门店-->
+				<div class="nearbyDiv">
+					<span class="mui-icon mui-icon-eye" id="home-eye"></span>
+					<span class="nearby">附近门店</span>
+				</div>
+					<li class="mui-shop-table-view-cell">
+						<!--商家信息图片-->
+						<a href="../shop/shop-detail.html">
+							<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+						</a>
+
+						<div class="mui-shop-table-view-cell-content">
+							<!--商家名称-->
+							<div class="mui-shop-table-view-content-info">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+									<span>星沙汽配城</span>
+								</a>
+								<span class="mui-shop-table-view-cell-space">1.5km</span>
+							</div>
+
+							<!--商家地址-->
+							<div class="mui-shop-table-view-cell-info">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+									<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面湖南省长沙市世界之窗斜对面</span>
+								</a>
+							</div>
+							<!--商家电话-->
+							<div>
+
+							</div>
+							<!--商家评级-->
+							<div class="mui-shop-table-view-cell-info-star">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+									<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+								</a>
+								<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">95599</span>
+							</div>
+
+						</div>
+					</li>
+					<li class="mui-shop-table-view-cell">
+						<!--商家信息图片-->
+						<a href="../shop/shop-detail.html">
+							<img class="mui-shop-table-view-cell-img-thumbnail" src="../img/shop/thumbnail/xsqpc-mini.jpg" alt="" />
+						</a>
+
+						<div class="mui-shop-table-view-cell-content">
+							<!--商家名称-->
+							<div class="mui-shop-table-view-content-info">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-storename">
+									<span>星沙汽配城</span>
+								</a>
+								<span class="mui-shop-table-view-cell-space">1.5km</span>
+							</div>
+
+							<!--商家地址-->
+							<div class="mui-shop-table-view-cell-info">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-address">
+									<span class="mui-shop-table-view-cell-address">湖南省长沙市世界之窗斜对面</span>
+								</a>
+							</div>
+							<!--商家电话-->
+							<div>
+
+							</div>
+							<!--商家评级-->
+							<div class="mui-shop-table-view-cell-info-star">
+								<a href="../shop/shop-detail.html" class="mui-shop-table-view-cell-info-stars">
+									<span class="mui-shop-table-view-cell-info-stars">★ ★ ★ ★ ★</span>
+								</a>
+								<span class="mui-icon iconfont icon-Phone dial-span" onclick="dialTest()">10086</span>
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+	</body>
+	<script src="../js/mui.min.js "></script>
+	<script src="../js/own.js" type="text/javascript " charset="utf-8 "></script>
+	<script type="text/javascript ">
+		/*mui初始化*/
+		mui.init({
+				/*侧滑关闭*/
+				swipeBack: false
+			})
+			/*定义当前页面内容*/
+		var currentWebview;
+		/*定义商城盒子*/
+		var homeDiv;
+		/*定义轮播图数据数组*/
+		var marqueeArray = [];
+		/*定义推荐商品数组*/
+		var recommendArray = [];
+		/*页面初始化*/
+		mui.plusReady(function() {
+			/*当前页面内容*/
+			currentWebview = plus.webview.currentWebview();
+			/*商城盒子*/
+			homeDiv = plus.webview.homeDiv;
+			/*初始化本地数据*/
+			initMarqueeData();
+			/*设置轮播图*/
+			setMarquee();
+			/*点击事件*/
+			addListevent();
+		})
+
+		/*轮播图函数*/
+		function setMarquee() {
+			var sliderMarquee = document.getElementById('mui-home-slider');
+			var sliderGroup = document.createElement('div');
+			sliderGroup.className = 'mui-slider-group mui-slider-loop';
+			sliderMarquee.appendChild(sliderGroup);
+			var sliderIndicator = document.createElement('div');
+			sliderIndicator.className = 'mui-slider-indicator';
+			sliderMarquee.appendChild(sliderIndicator);
+			for(var i = 0; i < marqueeArray.length; i++) {
+				if(0 == i) {
+					var sliderItemDuplicate = document.createElement('div');
+					sliderItemDuplicate.className = 'mui-slider-item mui-slider-item-duplicate';
+					sliderItemDuplicate.innerHTML = '<a href=" ' + marqueeArray[marqueeArray.length - 1].contentId + ' ">\
+							<img src=" ' + marqueeArray[marqueeArray.length - 1].imagerpath + ' " />\
+						</a>';
+					sliderGroup.appendChild(sliderItemDuplicate);
+				}
+				var sliderItem = document.createElement('div');
+				sliderItem.className = 'mui-slider-item';
+				sliderItem.innerHTML = '<a href=" ' + marqueeArray[i].contentId + ' ">\
+						<img src=" ' + marqueeArray[i].imagerpath + ' " />\
+					</a>';
+				sliderGroup.appendChild(sliderItem);
+				var indicatorItme = document.createElement('div');
+				if(i == 0) {
+					indicatorItme.className = 'mui-indicator mui-active';
+				} else {
+					indicatorItme.className = 'mui-indicator';
+				}
+				sliderIndicator.appendChild(indicatorItme);
+				if(marqueeArray.length - 1 == i) {
+					var sliderItemDuplicate = document.createElement('div');
+					sliderItemDuplicate.className = 'mui-slider-item mui-slider-item-duplicate';
+					sliderItemDuplicate.innerHTML = '<a href=" ' + marqueeArray[0].contentId + ' ">\
+							<img src=" ' + marqueeArray[0].imagerpath + ' " />\
+						</a>';
+					sliderGroup.appendChild(sliderItemDuplicate);
+				}
+				slider = mui('.mui-slider').slider({
+					interval: 2000
+				});
+			}
+		}
+
+		/*初始化轮播图数据函数*/
+		function initMarqueeData() {
+			/*轮播数量:4*/
+			for(var i = 0; i < 4; i++) {
+				/*定义轮播元素  数组*/
+				var marqueeItem = {};
+				/*轮播数组内容ID*/
+				marqueeItem.contentId = i;
+				/*轮播图共四张,i=3 即第四张*/
+				if(i == 3) {
+					marqueeItem.imagerpath = '../img/slider/slider4.png';
+					/*其它的张数名则为 i+1*/
+				} else {
+					marqueeItem.imagerpath = '../img/slider/slider' + (i + 1) + '.jpg';
+				}
+				/*使其生效*/
+				marqueeArray.push(marqueeItem);
+			}
+		}
+
+		/*点击事件*/
+		function addListevent() {
+			mui('#homeDiv').on('tap', 'a', function() {
+				var id = this.getAttribute('href');
+				var href = this.href;
+				var title = this.innerText;
+				var isBars = false;
+				var barsIcon = '';
+				var aniShow = getaniShow();
+				pushWebView({
+					webType: 'newWebview_First',
+					id: id,
+					href: href,
+					aniShow: aniShow,
+					title: title,
+					isBars: isBars,
+					barsIcon: barsIcon,
+					extendOptions: {}
+				})
+			});
+		}
+		
+		function plusReady() {}
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+
+			function dialTest() {
+				var lis = document.getElementsByClassName('dial-span');
+				for(var i = 0; i < lis.length; i++) {
+					lis[i]._index = i;
+					lis[i].onclick = function() {
+						var m = lis[this._index].innerHTML;
+						plus.device.dial(m, false);
+
+					};
+				}
+
+			}
+	</script>
+
+</html>

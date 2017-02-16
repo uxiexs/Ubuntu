@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/own.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/iconfont-phone-big.css" />
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">服务详情</h1>
+		</header>
+		<div class="mui-content">
+			<!--门店形象图片-->
+			<div class="mui-content-maintence-img-div">
+				<img src="../../img/shop/big/xsqpc-big.jpg" alt="" class="mui-content-maintence-img"/>
+			</div>
+
+			<!--服务项目购买-->
+			<div class="mui-content-maintence-buy-div">
+				<!--服务项目名称-->
+				<div class="mui-content-maintence-buy-title-div">
+					<span class="mui-content-maintence-buy-title">洗车</span>
+				</div>
+				<!--服务价格-->
+				<div class="mui-content-maintence-buy-price-div">
+					<span class="mui-content-maintence-buy-price-now">￥25</span>
+					<span class="mui-content-maintence-buy-price-old">门市价&nbsp;:&nbsp;￥30</span><br />
+					<span class="mui-content-maintence-buy-sale">已售&nbsp;:&nbsp;8888件</span>
+				</div>
+				<!--购买按钮-->
+				<div class="mui-content-maintence-buy-price-btn-div">
+					<a href="">
+						<div class="mui-btn mui-btn-danger" id="mui-content-maintence-buy-price-btn">立即购买</div>
+					</a>
+				</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="99%" color=#DDD SIZE=1>
+			<!--门店信息-->
+			<div class="mui-content-maintence-info">
+				<h5 style="height: 20px;overflow: hidden;color: #000000;font-weight: bold;">门店信息</h5>
+				<div class="mui-content-maintence-info-msg">
+					<span>豪车CLUB</span><br />
+					<span>解放西路湘水豪庭888号</span><br />
+					<span>1.6km</span>
+				</div>
+				<!--定位-->
+				<div class="mui-content-maintence-info-location">
+					<a id="icon-location"><span class="mui-icon mui-icon-location" style="margin-top:10px;"></span></a>
+				</div>
+				<!--电话-->
+				<div class="mui-content-maintence-info-contanct">
+					<span class="mui-icon iconfont icon-Phone main-tel" onclick="dialTest()">95599</span>
+				</div>
+
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3) margin-top:-25px;" width="99%" color=#DDD SIZE=1>
+			<!--门店评价-->
+			<div class="mui-content-maintence-comment-div">
+				<h5 style="height: 20px;overflow: hidden;color: #000000;font-weight: bold;">门店评价</h5>
+				<span>★ ★ ★ ★ ★</span>
+				<a href="shop-comments.html" class="mui-content-maintence-comment">
+					<span>评价(1)</span>
+				</a>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3) margin-top:-25px;" width="99%" color=#DDD SIZE=1>
+			<!--购买须知-->
+			<div class="mui-content-maintence-know-div">
+				<span>购买须知</span>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3) margin-top:-25px;" width="99%" color=#DDD SIZE=1>
+			<!--服务项目说明-->
+			<div class="mui-content-maintence-project-div">
+				<span>服务项目说明</span>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+					mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+			})(mui);
+
+			function plusReady() {}
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+
+			function dialTest() {
+				var lis = document.getElementsByClassName('main-tel')
+				for(var i = 0; i < lis.length; i++) {
+					lis[i]._index = i;
+					lis[i].onclick = function() {
+						var m = lis[this._index].innerHTML;
+						plus.device.dial(m, false);
+
+					};
+				}
+
+			}
+		</script>
+	</body>
+
+</html>

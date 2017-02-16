@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/own.css" />
+		<!--<link rel="stylesheet" href="../css/app.css" />-->
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">确认订单</h1>
+		</header>
+		<!--页面内容区域-->
+		<div class="mui-content">
+			<div id="orderDiv">
+				<form action="" id="orderDiv-post" method="post">
+					<div id="confirm-order-user" class="mui-mall-car-confirm-order">
+						<span id="confirm-order-usertitle">收货人:</span><br />
+						<span id="confirm-order-username">黄晓红</span><span id="confirm-order-user-mobile">13336164888</span>
+						<!--点击编辑/管理收货地址-->
+						<a href="../mall/use-address.html" class="confirm-order-useraddress-controller">>></a><br />
+						<span id="corirm-order-address">广东省东莞市南城区银丰路88号</span>
+					</div>
+					<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+					<div id="confirm-order-goodsinfo" class="">
+						<ul id="mui-mall-car-order-list-ul">
+							<li id="mui-mall-order-order-list-li">
+								<!--商品分类列表盒子-->
+								<div id="mui-mall-car-order-list-div">
+									<a class="mui-mall-car-order-list-a">
+										<!--图片盒子-->
+										<div class="mui-mall-car-order-list-goods-image">
+											<!--商品图片-->
+											<img src="../img/mall/goods/thumbnail/ex-mini.png" alt="" />
+										</div>
+										<!--标题盒子-->
+										<div class="mui-mall-car-order-list-goods-font-div">
+											<!--商品标题-->
+											<span class="mui-mall-car-order-list-goods-title">
+										壳牌(Shell)黄喜力HelixHX5 10W-40优质多级润滑油 SN  4L
+										</span><br />
+											<!--商品价格-->
+											<span class="mui-mall-car-order-list-goods-price">
+										￥128
+										</span>
+											<!--商品数量-->
+											<span class="mui-mall-car-order-list-goods-num">
+											数量 :
+										</span>
+											<div id="goodsnum" class="mui-numbox" data-numbox-min='1' data-numbox-max='999'>
+												<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+												<input id="test" class="mui-input-numbox" type="number" value="1" />
+												<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br />
+					<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+
+					<div id="confirm-order-shipping" class="mui-mall-car-confirm-order">
+						<label>配送方式</label><span id="confirm-order-shiping-price">快递 ￥10</span>
+					</div>
+					<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+					<div id="confirm-order-pay" class="mui-mall-car-confirm-order">
+						<label for="">支付方式</label><br />
+						<div class="">
+							<div class="mui-input-row mui-radio mui-left">
+								<label>微信支付</label>
+								<input name="radio1" type="radio">
+							</div>
+							<div class="mui-input-row mui-radio mui-left">
+								<label>支付宝支付</label>
+								<input name="radio1" type="radio" checked>
+							</div>
+						</div>
+					</div>
+					<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#DDD SIZE=1>
+					<!--可用积分抵扣-->
+					<div id="confirm-order-integral" class="mui-mall-car-confirm-order">
+						<div id="confirm-order-integral-tip">可用***积分抵扣***元</div>
+						<div class="mui-switch mui-active" id="confirm-order-integral-tip-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</div>
+					<!--结算-->
+					<div class="mui-bar mui-bar-tab" id="confrim-order-submit">
+						<div id="confirm-order-submit-content">
+							<span id="confirm-order-submit-content-text">合计&nbsp;:</span>
+							<span id="confirm-order-submit-content-price">￥138</span>
+							<input type="submit" value="结算" id="confirm-order-submit-button">
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<script src="../js/mui.min.js"></script>
+			<script type="text/javascript">
+				mui.init()
+			</script>
+	</body>
+
+</html>

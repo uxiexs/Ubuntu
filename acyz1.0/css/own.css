@@ -1,0 +1,2221 @@
+/*app顶部导航栏背景色*/
+
+.own-main-background-color {
+	background-color: #F5740A;
+}
+
+.ownbody,
+.ownContent {
+	background-color: #FFFFFF;
+}
+
+
+/*app顶部导航栏字体颜色*/
+
+#nav-title {
+	color: white;
+}
+
+
+/*搜索图标*/
+
+.sitemapToolbarButton {
+	display: block;
+	width: 70px;
+	height: 50px;
+	margin-left: 80%;
+	background-image: url(../img/search5.png);
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+}
+
+
+/*返回按钮颜色*/
+
+.mui-action-back {
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+
+
+/*li样式设置*/
+
+li {
+	list-style: none;
+}
+
+
+/*========================首页样式区域开始========================*/
+
+#home-search {
+	background-color: #FFFFFF;
+	/*border:1px solid #000000;*/
+	width: 50%;
+	float: right;
+	margin-right: 15%;
+}
+
+#home-checkcity {
+	width: 115px;
+	height: 45px;
+	text-align: center;
+	/*background:#0062CC;*/
+	padding-top: 4%;
+	text-decoration: underline;
+	color: #000000;
+	float: left;
+}
+
+.home-checkcity-icon {
+	width: 18px;
+	/*margin-top:7px;*/
+	/*padding-top: 5px;*/
+	/*background-color: #2AC845;*/
+	/*margin-left:40px;*/
+	/*float:left;*/
+}
+
+#mui-home-slider {
+	overflow: hidden;
+}
+
+
+/*图片自适应*/
+
+.mui-slider-item .mui-slider-item-duplicate {
+	line-height: auto;
+	max-width: auto;
+	height: auto;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+
+/*功能盒子*/
+
+.mui-home-function-sonDiv {
+	width: 50%;
+	/*background:#2AC845;*/
+	float: left;
+	text-align: center;
+	/*padding:-15px;*/
+	/*margin-left:30px;*/
+	/*background-color: #2AC845;*/
+}
+
+
+/*ul取消缩进*/
+
+#mui-home-function-ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*功能文字*/
+
+.mui-home-function-sonDiv-font {
+	color: #000000;
+}
+
+
+/*按钮*/
+
+#home-button1,
+#home-button2,
+#home-button3,
+#home-button4 {
+	width: 50%;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top: 5px;
+	/*margin-bottom: 20px;*/
+}
+
+#home-eye {
+	float: left;
+	margin-left: 5%;
+}
+
+.nearby {
+	/*background-color: #0062CC;*/
+	font-size: 12px;
+	margin-left: 4px;
+}
+
+
+/*选择城市开始*/
+
+.location-div {
+	/*height:80px;*/
+	/*background-color: #2AC845;*/
+}
+
+.city-home-location,
+#location {
+	line-height: 40px;
+	margin-left: 10%;
+}
+
+
+/*选择城市结束*/
+
+
+/*优惠套餐开始*/
+
+.mui-package-table-view-cell {
+	margin-top: 3%;
+	margin-left: 5%;
+	width: 90%;
+	height: 100px;
+	border: 1px solid #2AC845;
+	display: ;
+	/*background-color: #2AC845;*/
+}
+
+.mui-package-table-view {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*优惠券列表缩略图*/
+
+.mui-package-table-view-cell-img-thumbnail {
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+
+/*优惠券内容*/
+
+.mui-package-table-view-cell-content {
+	margin-left: 30%;
+	font-size: 13px;
+	margin-top: 2%;
+	/*background-color: #0062CC;*/
+}
+
+
+/*优惠券销量*/
+
+.mui-package-table-view-cell-sale {
+	/*background-color:#2AC845;*/
+	line-height: 28px;
+	font-size: 15px;
+}
+
+
+/*优惠券价格*/
+
+.mui-package-table-view-cell-price {
+	font-size: 18px;
+	color: #FF0000;
+}
+
+
+/*优惠券内容字体颜色*/
+
+.mui-package-table-view-cell-title,
+.mui-package-table-view-cell-sale {
+	color: #000000;
+}
+
+.mui-package-table-view-cell-title {
+	font-size: 16px;
+	font-weight: bold;
+	width: 88%;
+	height: 40px;
+	overflow: hidden;
+	display: block;
+	white-space: normal;
+}
+
+.mui-package-table-view-content-info {}
+
+
+/*优惠详情开始*/
+
+
+/*优惠详情大图*/
+
+.mui-content-package-detail-img {
+	height: 120px;
+	/*background-color: #2AC845;*/
+	text-align: center;
+}
+
+.mui-content-package-detail-img-big {
+	margin-top: 3%;
+	width: 120px;
+	height: 90px;
+}
+
+
+/*优惠详情标题*/
+
+.mui-content-package-detail-title {
+	font-weight: bold;
+}
+
+
+/*价格区域*/
+
+.mui-content-package-detail-buy {
+	height: 50px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-package-detail-buy-son1 {
+	margin-left: 10%;
+}
+
+
+/*优惠券价格-现价*/
+
+.mui-content-package-detail-buy-son1-newPrice {
+	color: #FF0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*优惠券价格-原价*/
+
+.mui-content-package-detail-buy-son1-oldPrice {
+	font-size: 14px;
+}
+
+
+/*优惠券销量*/
+
+.mui-content-package-detail-buy-son1-sale {
+	margin-left: 1%;
+	font-size: 15px;
+}
+
+.mui-content-package-detail-buy-son1 {
+	float: left;
+}
+
+
+/*点击购买按钮*/
+
+#clickBuy {
+	font-size: 80%;
+	/*background: #007AFF;*/
+	margin-right: 10%;
+	margin-top: 10px;
+	float: right;
+	width: 90px;
+}
+
+.mui-content-package-detail-content li {
+	margin-left: 10%;
+}
+
+
+/*优惠详情结束*/
+
+
+/*套餐购买区域开始*/
+
+
+/*套餐商品信息*/
+
+.mui-content-package-pay-goodsinfo {
+	width: 100%;
+	height: 100px;
+	/*background-color: #2AC845;*/
+}
+
+
+/*优惠券图片*/
+
+.mui-content-package-pay-goodsinfo-img {
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin-left: 5%;
+	margin-top: 3%;
+	/*background-color: #41CEA9;*/
+}
+
+
+/*优惠券标题*/
+
+.mui-content-package-pay-goodsinfo-title {
+	float: left;
+	margin-left: 10px;
+	width: 65%;
+	height: 40px;
+	margin-top: 4%;
+	overflow: hidden;
+	font-weight: bold;
+	/*background-color: #007AFF;*/
+}
+
+
+/*优惠券价格*/
+
+.mui-content-package-pay-goodsinfo-price {
+	float: left;
+	margin-left: 14px;
+	margin-top: 2%;
+	color: #FF0000;
+}
+
+
+/*确认手机*/
+
+.mui-content-package-pay-mobie-confrim {
+	height: 50px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-package-pay-mobie-confrim-text {
+	line-height: 50px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+
+/*修改手机号*/
+
+.mui-content-package-pay-mobie-change {
+	margin-left: 5%;
+}
+
+
+/*支付方式*/
+
+.mui-content-package-pay-methods {
+	height: 120px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-package-pay-methods-title {
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+.mui-radio input[type='radio']:checked:before {
+	content: '\e442';
+}
+
+.mui-content-package-pay-methods-list {
+	margin-top: 5%;
+	font-size: 14px;
+}
+
+
+/*套餐购买区域结束*/
+
+
+/*支付结果区域开始*/
+
+.mui-content-success {
+	height: 50px;
+	width: 100%;
+	/*background-color: #2AC845;*/
+	float: left;
+	;
+}
+
+
+/*支付成功图标*/
+
+.mui-conteng-success-img {
+	float: left;
+	width: 22px;
+	height: 22px;
+	/*margin-top:14px;*/
+}
+
+
+/*购买成功*/
+
+.mui-conteng-success-title {
+	/*line-height: 50px;*/
+}
+
+.mui-content-success-content {
+	/*background-color: #0062CC;*/
+	width: 30%;
+	font-size: 16px;
+	/*line-height: 50px;*/
+	margin-left: 37%;
+	margin-top: 14px;
+}
+
+
+/*vip卡*/
+
+#mui-content-VIP-card {
+	height: 145px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+	/*border:1px solid #555555;*/
+}
+
+.mui-content-VIP-number {
+	float: left;
+	height: 20px;
+	margin-left: 10%;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-VIP-validity {
+	width: 84%;
+	overflow: hidden;
+	float: left;
+	margin-left: 10%;
+	margin-top: 5px;
+	height: 20px;
+	font-size: 15px;
+	;
+}
+
+.mui-content-VIP-instructions {
+	max-height: 165px;
+	overflow: hidden;
+}
+
+.mui-content-VIP-areaShop {
+	float: right;
+	margin-right: 5%;
+}
+
+
+/*支付结果区域结束*/
+
+
+/*优惠套餐结束*/
+
+
+/*积分抽奖区域开始*/
+
+
+/*页面背景颜色*/
+
+#raffleBody,
+#raffleDiv {
+	background-color: #FFFFFF;
+}
+
+.mui-content-raffle-ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.mui-content-raffle-li {
+	height: 130px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-raffle-goodsinfo-img {
+	width: 100px;
+	height: 100px;
+	margin-top: 5%;
+	margin-left: 2%;
+	float: left;
+}
+
+.mui-content-raffle-goodsinfo-content {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 240px;
+	height: 120px;
+	margin-left: 10px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-raffle-goodsinfo-title {
+	float: left;
+	margin-top: 10%;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bolder;
+	/*background-color: #0062CC;*/
+}
+
+.mui-content-raffle-goodsinfo-intergrate {
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	color: #FF0000;
+	/*margin-top:5%;*/
+}
+
+.mui-content-raffle-draw {
+	height: 10px;
+	font-size: 12px;
+}
+
+
+/*活动详情子页面开始*/
+
+
+/*页面背景设置*/
+
+#raffle-detail-body,
+#raffle-detail-div {
+	background-color: #FFFFFF;
+}
+
+
+/*图片盒子*/
+
+.mui-content-raffle-detail-img-div {
+	height: 170px;
+	/*background-color: #2AC845;*/
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/*抽奖商品图*/
+
+.mui-content-raffle-detail-img {
+	height: 150px;
+	margin-top: 12px;
+}
+
+
+/*抽奖次数盒子*/
+
+.mui-content-raffle-detail-times-div {
+	width: 95%;
+	height: 20px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #CCCCCC;
+}
+
+
+/*抽奖次数*/
+
+.mui-content-raffle-detail-times {
+	line-height: 16px;
+	float: right;
+}
+
+
+/*商品信息 抽奖区域*/
+
+.mui-content-raffle-detail-info-div {
+	height: 71px;
+	width: 95%;
+	margin: 0 auto;
+	/*float:left;*/
+	border-bottom: 1px dashed #CCCCCC;
+}
+
+.mui-content-raffle-detail-info-goods {
+	width: 50%;
+	margin-left: 5%;
+	/*background-color: #2AC845;*/
+	float: left;
+}
+
+.mui-content-raffle-detail-info-goods-integral {
+	color: #F5740A;
+}
+
+.mui-content-raffle-detail-info-button-div {
+	height: 71px;
+	float: left;
+	width: 150px;
+	text-align: center;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-raffle-detail-info-button {
+	margin-top: 20px;
+	color: #000000;
+	background: #FFFF00;
+	border: 1px solid #000000;
+}
+
+.mui-content-raffle-detail-step,
+.mui-content-raffle-detail-tip,
+.mui-content-raffle-detail-infomation {
+	margin-left: 5%;
+}
+
+
+/*活动详情子页面结束*/
+
+
+/*开始抽奖子页面开始*/
+
+.mui-content-choujian-tip-div {
+	height: 60px;
+	color: #FFFF00;
+	font-size: 20px;
+	font-weight: bolder;
+	/*background-color: #4CD964;*/
+}
+
+.mui-content-choujian-tip-txt {
+	line-height: 60px;
+	;
+}
+
+
+/*开始抽奖子页面结束*/
+
+
+/*积分抽奖区域结束*/
+
+
+/*汽车保养开始*/
+
+#maintence-search {
+	float: left;
+	width: 60%;
+	background-color: #FFFFFF;
+	margin-left: 10%;
+	font-size: 14px;
+}
+
+.maintence-body,
+#maintenceDiv {
+	background-color: #FFFFFF;
+}
+
+
+/*汽车保养首页服务分类*/
+
+.mui-content-maintence-service {
+	height: 110px;
+	/*background-color: #2AC845;*/
+	border-bottom: 1px solid #AAAAAA;
+}
+
+
+/*服务icon*/
+
+.mui-conteng-maintence-service-carWash-div,
+.mui-conteng-maintence-service-carRepair-div,
+.mui-conteng-maintence-service-carBeauty-div,
+.mui-conteng-maintence-service-carMaintain-div {
+	/*margin:0 auto;*/
+	float: left;
+	height: 70px;
+	margin-left: 8%;
+	margin-top: 25px;
+	width: 55px;
+	/*background-color: #007AFF;*/
+	text-align: center;
+}
+
+.mui-conteng-maintence-service-carWash-img,
+.mui-conteng-maintence-service-carRepair-img,
+.mui-conteng-maintence-service-carBeauty-img,
+.mui-conteng-maintence-service-carMaintain-img {
+	margin-left: 0px;
+	height: 45px;
+	width: 55px;
+}
+
+.mui-conteng-maintence-service-carWash-txt,
+.mui-conteng-maintence-service-carRepair-txt,
+.mui-conteng-maintence-service-carBeauty-txt,
+.mui-conteng-maintence-service-carMaintain-txt {
+	font-weight: bolder;
+	color: #000000;
+}
+
+.mui-maintence-table-view {
+	margin: 0px;
+	padding: 0px;
+}
+
+.mui-maintence-table-view-cell {
+	border: 1px solid #2AC845;
+	width: 90%;
+	/*height:120px;*/
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.mui-maintence-table-view-cell-img {
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 71px;
+	height: 58px;
+	float: left;
+}
+
+.mui--maintence-table-view-cell-content-div {
+	margin-left: 26%;
+	padding-top: 2px;
+	font-size: 13px;
+	margin-top: 2%;
+}
+
+.mui--maintence-table-view-cell-content-storename {
+	font-weight: bold;
+	color: #000000;
+}
+
+.mui--maintence-table-view-cell-content-space {
+	float: right;
+	margin-right: 5%;
+	;
+}
+
+.mui--maintence-table-view-cell-content-address {
+	width: 230px;
+	color: #000000;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	white-space: normal;
+	font-family: "微软雅黑";
+}
+
+.mui--maintence-table-view-cell-content-stars {
+	float: left;
+	color: #000000;
+}
+
+.tel-icon {
+	float: right;
+	margin-top: 1%;
+	margin-right: 5%;
+	/*隐藏电话号码*/
+	width: 22px;
+	overflow: hidden;
+	display: block;
+}
+
+.mui--maintence-table-view-cell-storeService-ul {
+	magin: 0px;
+	padding: 10px;
+	margin-left: 15px;
+	font-size: 15px;
+	margin-top: -10px;
+}
+
+.mui--maintence-table-view-cell-storeService-li {
+	/*background-color: #007AFF;*/
+	margin-top: 5px;
+	line-height: 100%;
+}
+
+.mui--maintence-table-view-cell-storeService-nowPrice {
+	color: #FF0000;
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+.mui--maintence-table-view-cell-storeService-oldPrice {
+	margin-left: 10%;
+}
+
+.mui--maintence-table-view-cell-storeService-click {
+	float: right;
+	margin-right: 1%;
+	color: #000000;
+	font-size: 20px;
+}
+
+
+/*汽车保养结束*/
+
+
+/*服务详情开始*/
+
+.mui-content-maintence-img {
+	width: 100%;
+	/*height:100%;*/
+}
+
+.mui-content-maintence-buy-div {
+	height: 60px;
+}
+
+.mui-content-maintence-buy-title-div {
+	height: 30px;
+	overflow: hidden;
+	/*background-color: #41CEA9;*/
+}
+
+.mui-content-maintence-buy-title {
+	margin-left: 10px;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.mui-content-maintence-buy-price-div {
+	height: 60px;
+	width: 60%;
+	/*background-color: #007AFF;*/
+	float: left;
+}
+
+.mui-content-maintence-buy-price-now {
+	/*float:left;*/
+	margin-left: 10px;
+	line-height: 30px;
+	font-size: 20px;
+	color: #FF0000;
+}
+
+.mui-content-maintence-buy-price-old {
+	line-height: 30px;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+.mui-content-maintence-buy-sale {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+#mui-content-maintence-buy-price-btn {
+	margin-top: 15px;
+}
+
+.mui-content-maintence-buy-price-btn-div {
+	height: 100%;
+	/*background-color: #2AC845;*/
+	text-align: center;
+}
+
+.mui-content-maintence-info {
+	font-size: 15px;
+	margin-left: 10px;
+	height: 90px;
+	/*background-color: #0062CC;*/
+}
+
+.mui-content-maintence-info-location {
+	float: left;
+	width: 15%;
+	height: 60px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-maintence-info-msg {
+	float: left;
+	width: 70%;
+	height: 60px;
+	/*background-color: #6641E2;*/
+}
+
+.mui-content-maintence-info-contanct {
+	float: left;
+	width: 10%;
+	height: 60px;
+	/*background-color: #CF2D28;*/
+}
+
+.main-tel {
+	margin-top: 15px;
+}
+
+.mui-content-maintence-comment-div {
+	margin-left: 10px;
+}
+
+.mui-content-maintence-comment {
+	color: #000000;
+	font-size: 15px;
+	float: right;
+	margin-right: 10%;
+}
+
+.mui-content-maintence-know-div {
+	margin-left: 10px;
+}
+
+.mui-content-maintence-project-div {
+	margin-left: 10px;
+}
+
+.main-tel {
+	width: 30px;
+	overflow: hidden;
+}
+
+
+/*支付开始*/
+
+.maintence-pay-body,
+#miantencePayDiv {
+	background-color: #FFFFFF;
+}
+
+.mui-content-maintence-head-div {
+	/*width: 100%;*/
+	height: 80px;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-maintence-price-div {
+	height: 45px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-maintence-price-txt,
+.mui-content-maintence-price {
+	line-height: 45px;
+}
+
+.mui-content-maintence-price {
+	float: right;
+	margin-right: 50px;
+	color: #FF0000;
+}
+
+.mui-content-maintence-price-txt {
+	margin-left: 40px;
+}
+
+.mui-content-maintence-num-div {
+	margin-left: 40px;
+}
+
+#numBtn {
+	float: right;
+}
+
+.mui-content-maintence-num-txt {
+	float: left;
+	margin-top: 5px;
+}
+
+.mui-content-maintence-useCoupon-div {
+	height: 40px;
+	/*background-color: #6641E2;*/
+}
+
+.mui-content-maintence-useCoupon {
+	line-height: 40px;
+}
+
+#couponFrom {
+	margin-left: 40px;
+	;
+}
+
+.mui-content-maintence-confirm-mobile-div {
+	height: 40px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-maintence-confirm-mobile {
+	line-height: 40px;
+	margin-left: 40px;
+}
+
+.mui-content-maintence-change-mobile {
+	margin-left: 5px;
+	color: #F5740A;
+	font-size: 15px;
+}
+
+.mui-content-maintence-pay-mothod-div {
+	height: 100px;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-maintence-pay-mothod-icon {
+	width: 50%;
+	/*background-color: #0062CC;*/
+	margin-left: 20px;
+}
+
+.mui-content-maintence-pay-mothod-title {
+	margin-left: 40px;
+}
+
+.mui-content-maintence-order-price-div {
+	height: 20px;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-maintence-order-price-txt {
+	margin-left: 60%;
+	font-weight: bold;
+}
+
+.mui-content-maintence-order-price {
+	color: #FF0000;
+	margin-left: 20px;
+}
+
+.mui-content-maintence-pay--btn-div {
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+/*支付结束*/
+
+
+/*支付结果开始*/
+
+.mui-content-maintence-pay-success-tip-div {
+	height: 60px;
+	/*background-color: #2AC845;*/
+}
+
+#successItem {
+	float: left;
+	/*background-color:#007AFF ;*/
+	height: 30px;
+	width: 50%;
+	;
+	margin-left: 26%;
+	margin-top: 15px;
+}
+
+.mui-content-maintence-pay-success-instructions-div {
+	width: 90%;
+	height: 280px;
+	/*background-color: #2AC845;*/
+	margin-left: 5%;
+	margin-top: 3%;
+	padding: 0px;
+	border: 1px solid #D8D8D8;
+}
+
+.mui-content-maintence-pay-success-instructions-name-div {
+	font-weight: bold;
+	width: 100%;
+	font-size: 18px;
+	height: 40px;
+	/*background-color: #2AC845;*/
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.mui-content-maintence-pay-success-instructions-name {
+	line-height: 40px;
+}
+
+.mui-content-maintence-pay-success-instructions-code-div {
+	height: 100px;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-maintence-pay-success-instructions-code {
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+}
+
+.mui-content-maintence-pay-success-redeem-code-div {
+	height: 50px;
+	/*background-color: #007AFF;*/
+	border-bottom: 1px dashed #000000;
+}
+
+.mui-content-maintence-pay-success-redeem-code-txt {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #F5740A;
+}
+
+.mui-content-maintence-pay-success-redeem-code-content {
+	margin-left: 20px;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #F5740A;
+}
+
+.mui-content-maintence-pay-success-instructions-txt-div {
+	text-align: left;
+	padding: 0px;
+}
+
+.mui-content-maintence-pay-success-instructions-txt-title {
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.mui-content-maintence-pay-success-instructions-txt-content {
+	display: block;
+	float: left;
+	margin-left: 20px;
+	width: 91%;
+	height: 40px;
+	white-space: normal;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+
+/*支付结果结束*/
+
+
+/*服务详情结束*/
+
+
+/*注册区域开始*/
+
+.reg-agree-txt {
+	color: #000000;
+}
+
+
+/*注册区域结束*/
+
+
+/*完善车辆信息开始*/
+
+.mui-content-car-logoArea {
+	height: 80px;
+	/*background-color: #41CEA9;*/
+	border-bottom: 1px dashed #999999;
+}
+
+
+/*logo*/
+
+.mui-content-car-logo {
+	float: left;
+	height: 80px;
+	width: 20%;
+	margin-left: 5%;
+	/*background-color: #2AC845;*/
+}
+
+
+/*logo icon*/
+
+.mui-content-car-logo-icon {
+	margin-top: 8px;
+}
+
+
+/*logo intro*/
+
+.mui-content-car-intro {
+	float: left;
+	width: 65%;
+	height: 80px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-car-intro-txt1 {
+	float: left;
+	margin-top: 8px;
+	font-weight: bold;
+	color: #F5740A;
+	width: 260px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-car-intro-txt2 {
+	float: left;
+	width: 260px;
+	font-weight: bold;
+}
+
+.mui-content-car-info-name {
+	width: 70px;
+}
+
+#carBody,
+#carDiv {
+	background-color: #FFFFFF;
+}
+
+#ajaxSubmit {
+	width: 20%;
+	color: #FFFFFF;
+	margin: 30px auto;
+	background: #555555;
+}
+
+
+/*完善车辆信息结束*/
+
+
+/*========================首页样式区域结束========================*/
+
+
+/*========================商城样式区域开始========================*/
+
+
+/*服务分类区域开始*/
+
+
+/*服务分类图标 ul li a span 设置*/
+
+#mui-mall-car-service-ul #mui-mall-car-service-li {
+	list-style: none;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	clear: none;
+}
+
+#mui-mall-car-service-ul #mui-mall-car-service-li .mui-mall-car-service-category {
+	float: none;
+	display: block;
+}
+
+#mui-mall-car-service-ul #mui-mall-car-service-li .mui-mall-car-service-category .mui-mall-car-service-div-font {
+	display: block;
+}
+
+
+/**/
+
+
+/*服务分类图标div盒子设置*/
+
+.mui-mall-car-service-div {
+	float: left;
+	width: 23%;
+}
+
+
+/*服务分类图标名称*/
+
+.mui-mall-car-service-div-font {
+	color: #222222;
+	font-size: 12px;
+}
+
+
+/*分隔带*/
+
+#mui-mall-car-separated {
+	width: 100%;
+	height: 10px;
+	background-color: #efeff4;
+}
+
+
+/*服务分类区域结束*/
+
+
+/*服务列表区域开始*/
+
+
+/*服务列表区域ul li设置*/
+
+#mui-mall-car-service-list-ul #mui-mall-car-service-list-li {
+	list-style: none;
+	clear: none;
+}
+
+#mui-mall-car-service-list-li {
+	padding-left: 10%;
+}
+
+#mui-mall-car-service-list-ul {
+	width: 100%;
+	margin-left: -40px;
+}
+
+.mui-mall-car-service-list-goods-image-div {
+	width: 20%;
+}
+
+.mui-mall-car-service-list-goods-font-div {
+	width: 70%;
+}
+
+
+/*服务列表区域列表商品div设置*/
+
+.mui-mall-car-service-list-goods-image-div {
+	float: left;
+}
+
+.mui-mall-car-service-list-goods-font-div {
+	float: left;
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+
+/*服务列表区域商品标题字体设置*/
+
+.mui-mall-car-service-list-goods-title {
+	font-weight: bolder;
+	font-size: 16px;
+	color: #000000;
+	table-layout: fixed;
+	word-break: break-all;
+	width: 100px;
+}
+
+
+/*服务列表区域商品价格设置*/
+
+.mui-mall-car-service-list-goods-price {
+	font-weight: bolder;
+	color: #FF0000;
+}
+
+
+/*服务列表区域商品销售数量设置*/
+
+.mui-mall-car-service-list-goods-salenum {
+	color: #333333;
+	font-size: 13px;
+	margin-left: 30%;
+}
+
+
+/*服务列表区域结束*/
+
+
+/*商品详情区域开始*/
+
+
+/*顶部图片*/
+
+#mui-mall-goodsinfo-head-image {
+	text-align: center;
+	margin-top: 1%;
+}
+
+
+/*点击购买按钮背景*/
+
+#mui-mall-goodsinfo-head-buy {
+	display: block;
+	width: 81px;
+	height: 35px;
+	margin-left: 75%;
+	margin-top: 0px;
+	background-image: url(../img/mall/goods/others/buy.png);
+	background-repeat: no-repeat;
+}
+
+
+/*商品标题设置*/
+
+#mui-mall-goodsinfo-head-price {
+	color: #FF0000;
+	font-weight: bold;
+	float: left;
+}
+
+#mui-mall-goodsinfo-saleNum {
+	font-size: 13px;
+}
+
+
+/*商品详情区域结束*/
+
+
+/*添加地址区域开始*/
+
+#addDiv {
+	margin-top: 3%;
+}
+
+
+/*输入框样式*/
+
+#mui-mall-user-addAddress-username,
+#mui-mall-user-addAddress-usermobile,
+#showCityPicker3,
+#adddressinfo {
+	border: 1px solid #DDDDDD;
+	text-align: center;
+}
+
+#mui-mall-user-addAddress-username,
+#mui-mall-user-addAddress-usermobile,
+#showCityPicker3 {
+	width: 50%;
+	float: left
+}
+
+#showCityPicker3 {
+	width: 65%;
+	font-size: 15px;
+}
+
+#adddressinfo {
+	height: 30px;
+	width: 95%;
+}
+
+
+/*间距调整*/
+
+#username,
+#mobile,
+#checkAddress,
+#adddressinfo {
+	margin-top: 10px;
+}
+
+#s1,
+#s2,
+#s3 {
+	width: 30%;
+	float: left;
+}
+
+
+/*保存*/
+
+#load {
+	margin-top: 10%;
+	text-align: center;
+	/*background-color: #0062CC;*/
+}
+
+
+/*保存按钮*/
+
+#addAddress-load {
+	background: #DD524D;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	font-size: 16px;
+	width: 25%;
+}
+
+
+/*添加地址区域结束*/
+
+
+/*确认订单区域开始*/
+
+#orderDiv {
+	width: 99%;
+	margin-top: 3%;
+}
+
+
+/*>>符号*/
+
+.confirm-order-useraddress-controller {
+	color: #B6B6B6;
+	font-size: 25px;
+	margin-left: 23%
+}
+
+#confirm-order-usertitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#confirm-order-user-mobile {
+	margin-top: 5px;
+	padding: 5%;
+}
+
+.mui-mall-car-confirm-order {
+	padding-left: 6%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.mui-mall-car-order-list-goods-image {
+	float: left
+}
+
+.mui-mall-car-order-list-goods-font-div {
+	/*width:75%;*/
+	color: #000000;
+	;
+	/*background-color: #2AC845;*/
+	/*margin-left:25%;*/
+	padding-top: 1%;
+}
+
+.mui-mall-car-order-list-goods-title {
+	font-size: 13px;
+	word-wrap: break-word;
+}
+
+.mui-mall-car-order-list-goods-price {
+	color: #FF0000;
+	padding-top: 3px;
+	font-size: 20px;
+	float: left;
+}
+
+.mui-mall-car-order-list-goods-num {
+	padding-left: 5%;
+	margin-top: 1.8%;
+	font-size: 18px;
+	float: left;
+}
+
+#goodsnum {
+	float: left;
+	margin-left: 1%;
+	/*width: 100px;height: 20px;*/
+}
+
+#confirm-order-shiping-price {
+	margin-left: 50%;
+	color: #AAAAAA;
+}
+
+#confirm-order-integral {
+	float: left;
+	width: 100%;
+}
+
+#confirm-order-integral-tip {
+	/*height:0px;*/
+	float: left;
+}
+
+#confirm-order-integral-tip-switch {
+	margin-top: -8%;
+	margin-left: 60%;
+	float: left;
+}
+
+
+/*订单提交*/
+
+#confrim-order-submit {
+	font-size: 20px;
+	/*background-color: #6641E2;*/
+	text-align: right;
+}
+
+#confrim-order-submit:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+	/* Adjusts for spacing */
+}
+
+#confirm-order-submit-content {
+	/*background-color: #2AC845;*/
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2%;
+}
+
+#confirm-order-submit-content-text {
+	line-height: 30px;
+}
+
+#confirm-order-submit-button {
+	width: 70px;
+	background: #F5740A;
+	border: 1px solid #F5740A;
+}
+
+
+/*合计金额*/
+
+#confirm-order-submit-content-price {
+	color: #FF0000;
+}
+
+
+/*确认订单区域结束*/
+
+
+/*选择收货地址区域开始*/
+
+.useAdDiv {
+	margin-top: 3%;
+}
+
+
+/*取消ul的缩进样式*/
+
+.use-address-ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*缩进*/
+
+.use-address-ul-name,
+.use-address-ul-mobile,
+.use-address-ul-text,
+.use-address-ul-text-content {
+	padding-left: 5%;
+}
+
+
+/*默认地址颜色*/
+
+.use-address-ul-text {
+	color: #FF0000;
+}
+
+.use-address-radio {
+	margin-left: 35%;
+}
+
+
+/*默认地址字体大小设置*/
+
+.use-address-ul-text-content,
+.use-address-ul-deafult-content {
+	font-size: 15px;
+}
+
+
+/*新增按钮 管理按钮*/
+
+.use-address-addDiv,
+.use-address-delDiv {
+	float: left;
+	padding-left: 20%;
+	padding-top: 10%;
+}
+
+
+/*选择收货地址区域结束*/
+
+
+/*管理收货地址开始*/
+
+.controlDiv {
+	margin-top: 15%;
+}
+
+
+/*管理收货地址结束*/
+
+
+/*========================商城样式区域结束========================*/
+
+
+/*========================门店样式区域开始========================*/
+
+
+/*门店首页区域开始*/
+
+
+/*ul设置*/
+
+.mui-shop-table-view {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*li边框设置*/
+
+.mui-shop-table-view-cell {
+	margin-top: 3%;
+	margin-left: 5%;
+	width: 90%;
+	height: 100px;
+	border: 1px solid #2AC845;
+	display: ;
+	/*background-color: #2AC845;*/
+}
+
+
+/*商家列表缩略图*/
+
+.mui-shop-table-view-cell-img-thumbnail {
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 71px;
+	height: 58px;
+	float: left;
+}
+
+
+/*商家列表ul设置*/
+
+.mui-shop-table-view-cell-content {
+	margin-left: 28%;
+	font-size: 13px;
+	margin-top: 2%;
+	/*background-color: #0062CC;*/
+}
+
+.mui-shop-table-view-cell-info {
+	/*padding-top:1%;*/
+	color: #000000;
+	/*float:left;*/
+}
+
+.mui-shop-table-view-cell-space {
+	padding-left: 50%;
+}
+
+
+/*商家名称*/
+
+.mui-shop-table-view-cell-storename,
+.mui-shop-table-view-cell-address,
+.mui-shop-table-view-cell-info-stars {
+	color: #000000;
+}
+
+.mui-shop-table-view-cell-storename {
+	font-weight: bold;
+}
+
+
+/*评星区*/
+
+.mui-shop-table-view-cell-info-star {
+	width: 95%;
+	height: 40px;
+	float: left;
+	/*background-color: #2AC845;*/
+}
+
+
+/*星星*/
+
+.mui-shop-table-view-cell-info-stars {
+	float: left;
+	/*background-color: #007AFF;*/
+}
+
+
+/*电话*/
+
+.dial-span {
+	/*background-color: #41CEA9;*/
+	margin-left: 80%;
+	height: 100%;
+	float: left;
+	margin-top: -8%;
+	/*隐藏电话号码*/
+	width: 22px;
+	overflow: hidden;
+	display: block;
+}
+
+
+/*商家地址长度控制*/
+
+.mui-shop-table-view-cell-address {
+	width: 230px;
+	height: 40px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	white-space: normal;
+	font-family: "微软雅黑";
+	/*background-color: #0062CC;*/
+}
+
+
+/*门店首页区域结束*/
+
+
+/*门店详情区域开始*/
+
+.shop-detail-body-ul {
+	margin: 2%;
+	padding: 0px;
+}
+
+
+/*门店介绍*/
+
+.shop-detail-body-address {
+	height: 130px;
+	/*background-color: #41CEA9;*/
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+/*地址字数限制*/
+
+#address-length {
+	display: block;
+	height: 20%;
+	overflow: hidden;
+	/*white-space*/
+	text-overflow: ellipsis;
+	/*float:left;*/
+	font-size: 13px;
+	/*background-color: #2AC845;*/
+}
+
+.shop-detail-body-address-info {
+	line-height: 30px;
+}
+
+
+/*联系门店*/
+
+.shop-detail-body-contact {
+	height: 40px;
+	/*background-color: #007AFF;*/
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.shop-contact {
+	line-height: 40px;
+	/*vertical-align:middle;*/
+	/*background-color: #0062CC;*/
+}
+
+#shop-contact-number {
+	padding-left: 10%;
+}
+
+#shop-contact-icon {
+	margin-top: 5px;
+	padding-left: 36%;
+}
+
+
+/*门店服务项目*/
+
+.shop-detail-body-service {
+	/*height:150px;*/
+	/*background-color: #6641E2;*/
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 10px;
+}
+
+
+/*评价*/
+
+.shop-detail-body-comment {
+	color: #000000;
+	font-size: 15px;
+	margin-left: 55%;
+}
+
+
+/*距离*/
+
+.shop-detail-body-address-info-distances {
+	font-size: 14px;
+	/*margin-left:5%;*/
+}
+
+.mui-icon-location {
+	font-size: 40px;
+}
+
+
+/*门店服务项目标题*/
+
+#shop-service-title {
+	margin-top: 5px;
+	height: 15px;
+	/*position: absolute;*/
+	/*width:90%;*/
+	/*float:left;*/
+	/*background-color: #0062CC;*/
+}
+
+#shop-deatail-title,
+#shop-contact-title,
+#shop-service-title,
+#shop-intro-title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.shop-detail-service {
+	/*background-color: #2AC845;*/
+	font-size: 13px;
+	line-height: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*门店服务项目底线边框*/
+
+.shop-detail-service-li {
+	/*	border-bottom: 1px dotted #2AC845;*/
+	padding-top: 10px;
+	padding-left: 20px;
+	width: 100%;
+	/*background-color: #2AC845;*/
+}
+
+
+/*门店服务项目参考价格位置设置*/
+
+.shop-detail-service-price-area {
+	float: right;
+	padding-right: 10%;
+	/*background-color: #007AFF;*/
+}
+
+
+/*门店服务项目参考价格*/
+
+.shop-detail-service-price-area-price {
+	color: #FF0000;
+}
+
+
+/*门店详情区域结束*/
+
+
+/*门店评论区域开始*/
+
+.shop-comments-ul {
+	padding: 2%;
+	font-size: 14px;
+}
+
+.shop-comments-star {
+	float: right;
+}
+
+
+/*用户头像li*/
+
+.shop-comments-img {
+	float: left;
+	height: 70px;
+	/*background-color: #2AC845;*/
+}
+
+
+/*用户头像图片*/
+
+.shop-comments-img-mini {
+	margin-top: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+.shop-comments-mobile,
+.shop-comments-date,
+.shop-comments-comtent {
+	/*background-color: #007AFF;*/
+	margin-left: 5%;
+	line-height: 25px;
+}
+
+
+/*门店评论区域结束*/
+
+
+/*========================门店样式区域结束========================*/
+
+
+/*========================个人中心样式区域开始========================*/
+
+
+/*个人中心首页开始*/
+
+.mui-content-mine-head-div {
+	height: 125px;
+	/*background-color: #2AC845;*/
+}
+
+.mui-content-mine-head-img-div {
+	height: 90px;
+	/*background-color: #007AFF;*/
+}
+
+.mui-content-mine-head-img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.mui-content-mine-head-mobile {
+	float: left;
+	margin-left: 5px;
+	/*background-color: #6641E2;*/
+	line-height: 90px;
+}
+
+.mui-content-mine-head-orderBtn-div {
+	height: 35px;
+	/*background-color: #41CEA9;*/
+}
+
+.mine-style {
+	color: #FFFFFF;
+}
+
+.mine-pay {
+	margin: 0 auto;
+	margin-left: 4px;
+}
+
+.mui-content-mine-service-order-div {
+	height: 36px;
+	/*background: #2AC845;*/
+}
+
+.mine-list-common {
+	line-height: 36px;
+	margin-left: 10px;
+	color: #000000;
+}
+
+
+/*个人中心首页结束*/
+
+
+/*我的服务订单开始*/
+
+.mui-content-serice-order-list-div {
+	height: 160px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.mui-content-serice-order-list-top-div {
+	height: 40px;
+	/*background-color: #007AFF;*/
+	border-bottom: 1px dashed #D3D3D3;
+}
+
+.mui-content-serice-order-list-mid-div {
+	height: 80px;
+	/*background-color: #2AC845;*/
+	border-bottom: 1px dashed #D3D3D3;
+}
+
+.mui-content-serice-order-list-bottom-div {
+	height: 40px;
+	/*background-color: #41CEA9;*/
+}
+.own-btn{
+	float:right;
+	padding:4px;
+	margin-top:4px;
+	margin-right: 20px;
+}
+.shop-icon {
+	font-size: 35px;
+	margin-left: 20px;
+	line-height: 40px;
+}
+
+.mui-content-serice-order-list-top-txt2 {
+	margin-left: 120px;
+}
+
+.mui-content-serice-order-list-mid-img-div {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	/*	background-color: #2AC845;*/
+}
+
+.mui-content-serice-order-list-mid-img {
+	width: 60px;
+	height: 60px;
+}
+
+.mui-content-serice-order-list-mid-content-div{
+	color:#000000;
+	float:left;
+	height:60px;
+	margin-top:10px;
+	width:200px;
+	margin-left:20px;
+	/*background-color: #2AC845;*/
+}
+.mui-content-serice-order-list-mid-content-txt1,.mui-content-serice-order-list-mid-content-txt2,.mui-content-serice-order-list-mid-content-txt3{
+	float: left;
+	font-size: 15px;
+	width:200px;
+	/*background-color: #0062CC;*/
+}
+/*我的服务订单结束*/
+/*服务订单详情开始*/
+.mui-content-service-order-info-head-div{
+	height:110px;
+	/*background-color: #0062CC;*/
+	border-bottom: 1px solid #D3D3D3;
+}
+.mui-content-service-order-info-neck-div{
+	height:100px;
+	/*background-color: #2AC845;*/
+	border-bottom: 1px solid #D3D3D3;
+}
+.mui-content-service-order-info-body-div{
+	height:180px;
+	border-bottom: 1px solid #D3D3D3;
+}
+.mui-content-service-order-info-div{
+	float: left;
+	width:100%;
+	height: 70px;
+	/*background-color: #2AC845;*/
+	border-bottom: 1px solid #D3D3D3;
+	
+}
+.mui-content-service-order-info1-div{
+	float: left;
+	width:100%;
+	height:50px;
+	margin-top:10px;
+	/*background-color: #41CEA9;*/
+}
+.mui-content-service-order-info1-img{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left: 20px;
+}
+.mui-content-service-order-info1-txt-div{
+	float:left;
+	margin-left: 20px;
+	height: 50px;
+	width: 220px;
+}
+.mui-content-service-order-info1-txt1,.mui-content-service-order-info1-txt2,.mui-content-service-order-info1-txt3{
+	font-weight: bold;
+	float:left;
+	width:100%;
+}
+.mui-content-service-order-info1-nowPrice,.mui-content-service-order-info1-oldPrice{
+	float:left;
+	margin-top:5px;
+}
+.mui-content-service-order-info1-oldPrice{
+	margin-left: 40px;
+	font-size: 13px;
+}
+.mui-content-service-order-info1-nowPrice{
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.forward-icon{
+	margin-top:10px;
+	font-size: 30px;
+	margin-left:10px;
+	color:#000000;
+}
+.mui-content-service-order-info-neck-title{
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*服务订单详情结束*/
+
+/*========================个人中心样式区域结束========================*/

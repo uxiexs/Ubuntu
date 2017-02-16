@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/own.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont-phone.css"/>
+	</head>
+
+	<body>
+		<!--页面顶部标题栏-->
+		<header class="mui-bar mui-bar-nav own-main-background-color">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="nav-title" class="mui-title">门店详情</h1>
+		</header>
+		<!--页面内容区域-->
+		<div class="mui-content">
+			<!--门店形象图片-->
+			<div class="shop-detail-head">
+				<img src="../img/shop/big/xsqpc-big.jpg" alt="" style="width:100%" />
+			</div>
+			<div class="shop-detail-body">
+				<ul class="shop-detail-body-ul">
+					<!--门店信息-->
+					<li class="shop-detail-body-address">
+						<span class="shop-detail-body-address-info" id="shop-deatail-title">星沙汽配城</span><br />
+						<span class="shop-detail-body-address-info" id="address-length">湖南省长沙市麓谷大道627号新长海B3栋301室湖南增强现实网络科技</span>
+						<span class="shop-detail-body-address-info-distances">1.6km</span>
+						<a id="icon-location"><span class="mui-icon mui-icon-location"></span></a>
+						<br/>
+						<span class="shop-detail-body-address-info">★ ★ ★ ★ ★</span>
+						<a href="../shop/shop-comments.html" class="shop-detail-body-comment">
+							<span>评价(1)</span>
+						</a>
+
+					</li>
+					<li class="shop-detail-body-contact">
+						<div class="shop-contact">
+							<span id="shop-contact-title">联系电话</span>
+							<span id="shop-contact-number">10010</span>
+							<span id="shop-contact-icon" class="mui-icon iconfont icon-Phone"onclick="dialTest()"></span>
+						</div>
+					</li>
+					<li class="shop-detail-body-service">
+						<div id="shop-service-title">门店服务项目</div>
+						<ul class="shop-detail-service">
+							<li class="shop-detail-service-li">
+								<span>蜡水洗车</span>
+								<span class="shop-detail-service-price-area">
+									参考价&nbsp;<span class="shop-detail-service-price-area-price">￥175</span>
+								</span>
+							</li>
+							<li class="shop-detail-service-li">
+								<span>补胎</span>
+								<span class="shop-detail-service-price-area">
+									参考价&nbsp;<span class="shop-detail-service-price-area-price">￥158</span>
+								</span>
+							</li>
+							<li class="shop-detail-service-li">
+								<span>上光蜡</span>
+								<span class="shop-detail-service-price-area">
+									参考价&nbsp;<span class="shop-detail-service-price-area-price">￥349</span>
+								</span>
+							</li>
+						</ul>
+					</li>
+					<li class="shop-detail-body-intro">
+						<span id="shop-intro-title">门店介绍</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+				/*点击事件*/
+				addListevent();
+			})(mui);
+
+			function plusReady() {}
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+
+			function dialTest() {
+				var e = document.getElementById('shop-contact-number');
+				var m = e.innerHTML;
+				plus.device.dial(m, false);
+			}
+			/*点击事件*/
+			function addListevent() {
+				mui('#mui-content').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					var title = this.innerText;
+					var isBars = false;
+					var barsIcon = '';
+					var aniShow = getaniShow();
+					pushWebView({
+						webType: 'newWebview_First',
+						id: id,
+						href: href,
+						aniShow: aniShow,
+						title: title,
+						isBars: isBars,
+						barsIcon: barsIcon,
+						extendOptions: {}
+					})
+				});
+			}
+		</script>
+	</body>
+
+</html>

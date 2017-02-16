@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link href="../css/own.css" rel="stylesheet" />
+		<style type="text/css">
+			/*.mui-table-view:after {
+				height: 0px;
+			}
+			//图片显示的时候设置为自动 因为 从服务器来的图片大小相同
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object {
+				line-height: auto;
+				max-width: auto;
+				height: auto;
+				border-top-right-radius: 4px;
+				border-top-left-radius: 4px;
+			}*/
+		</style>
+	</head>
+
+	<body class="mui-mall-home">
+		<!--页面内容区域-->
+		<div class="mui-content">
+			<!--商城内容区域-->
+			<div id="homeDiv" class="mui-content own-content-padding">
+				<!--轮播图区域-->
+				<div id="mui-mall-slider" class="mui-slider">
+				</div>
+				<!--分类服务图标区域-->
+				<ul id="mui-mall-car-service-ul" class="mui-mall-car-service">
+					<li id="mui-mall-car-service-li">
+						<!--汽车装饰-->
+						<div class="mui-mall-car-service-div">
+							<a id="mui-mall-car-service-div-decoration " class="mui-mall-car-service-category " href="">
+								<img src="../img/car/car1.png " />
+								<span class="mui-mall-car-service-div-font">汽车装饰</span>
+							</a>
+						</div>
+						<!--车载电器-->
+						<div class="mui-mall-car-service-div">
+							<a id="mui-mall-car-service-div-appliance " class="mui-mall-car-service-category " href="">
+								<img src="../img/car/car1.png " />
+								<span class="mui-mall-car-service-div-font">车载电器</span>
+							</a>
+						</div>
+						<!--维修保养-->
+						<div class="mui-mall-car-service-div">
+							<a id="mui-mall-car-service-div-service " class="mui-mall-car-service-category " href=" ">
+								<img src="../img/car/car1.png " />
+								<span class="mui-mall-car-service-div-font">维修保养</span>
+							</a>
+						</div>
+						<!--美容清洁-->
+						<div class="mui-mall-car-service-div">
+							<a id="mui-mall-car-service-div-clear " class="mui-mall-car-service-category " href=" ">
+								<img src="../img/car/car1.png " />
+								<span class="mui-mall-car-service-div-font">美容清洁</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<!--分隔带-->
+				<div id="mui-mall-car-separated"></div>
+				<!--分类服务列表区域-->
+				<ul id="mui-mall-car-service-list-ul">
+					<li id="mui-mall-car-service-list-li">
+						<!--商品分类列表盒子-->
+						<div id="mui-mall-car-service-list-div">
+							<a class="mui-mall-car-service-list-a" href="../mall/goods-details.html">
+								<!--图片盒子-->
+								<div class="mui-mall-car-service-list-goods-image-div">
+									<!--商品图片-->
+									<img src="../img/mall/goods/thumbnail/ex-mini.png" alt="" />
+								</div>
+								<!--标题盒子-->
+								<div class="mui-mall-car-service-list-goods-font-div">
+									<!--商品标题-->
+									<span class="mui-mall-car-service-list-goods-title">
+										壳牌(Shell)黄喜力HelixHX5 10W-40优质多级润滑油 SN  4L
+									</span><br />
+									<!--商品价格-->
+									<span class="mui-mall-car-service-list-goods-price">
+										￥128
+									</span>
+									<!--商品销量-->
+									<span class="mui-mall-car-service-list-goods-salenum">已售10000件</span>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/own.js" type="text/javascript " charset="utf-8 "></script>
+		<script type="text/javascript ">
+			/*mui初始化*/
+			mui.init({
+					/*侧滑关闭*/
+					swipeBack: false
+				})
+				/*定义当前页面内容*/
+			var currentWebview;
+			/*定义商城盒子*/
+			var homeDiv;
+			/*定义轮播图数据数组*/
+			var marqueeArray = [];
+			/*定义推荐商品数组*/
+			var recommendArray = [];
+			/*页面初始化*/
+			mui.plusReady(function() {
+				/*当前页面内容*/
+				currentWebview = plus.webview.currentWebview();
+				/*商城盒子*/
+				homeDiv = plus.webview.homeDiv;
+				/*初始化本地数据*/
+				initMarqueeData();
+				/*设置轮播图*/
+				setMarquee();
+				/*点击事件*/
+				addListevent();
+			})
+
+			/*轮播图函数*/
+			function setMarquee() {
+				var sliderMarquee = document.getElementById('mui-mall-slider');
+				var sliderGroup = document.createElement('div');
+				sliderGroup.className = 'mui-slider-group mui-slider-loop';
+				sliderMarquee.appendChild(sliderGroup);
+				var sliderIndicator = document.createElement('div');
+				sliderIndicator.className = 'mui-slider-indicator';
+				sliderMarquee.appendChild(sliderIndicator);
+				for (var i = 0; i < marqueeArray.length; i++) {
+					if (0 == i) {
+						var sliderItemDuplicate = document.createElement('div');
+						sliderItemDuplicate.className = 'mui-slider-item mui-slider-item-duplicate';
+						sliderItemDuplicate.innerHTML = '<a href=" ' + marqueeArray[marqueeArray.length - 1].contentId + ' ">\
+							<img src=" ' + marqueeArray[marqueeArray.length - 1].imagerpath + ' " />\
+						</a>';
+						sliderGroup.appendChild(sliderItemDuplicate);
+					}
+					var sliderItem = document.createElement('div');
+					sliderItem.className = 'mui-slider-item';
+					sliderItem.innerHTML = '<a href=" ' + marqueeArray[i].contentId + ' ">\
+						<img src=" ' + marqueeArray[i].imagerpath + ' " />\
+					</a>';
+					sliderGroup.appendChild(sliderItem);
+					var indicatorItme = document.createElement('div');
+					if (i == 0) {
+						indicatorItme.className = 'mui-indicator mui-active';
+					} else {
+						indicatorItme.className = 'mui-indicator';
+					}
+					sliderIndicator.appendChild(indicatorItme);
+					if (marqueeArray.length - 1 == i) {
+						var sliderItemDuplicate = document.createElement('div');
+						sliderItemDuplicate.className = 'mui-slider-item mui-slider-item-duplicate';
+						sliderItemDuplicate.innerHTML = '<a href=" ' + marqueeArray[0].contentId + ' ">\
+							<img src=" ' + marqueeArray[0].imagerpath + ' " />\
+						</a>';
+						sliderGroup.appendChild(sliderItemDuplicate);
+					}
+					slider = mui('.mui-slider').slider({
+						interval: 2000
+					});
+				}
+			}
+
+			/*初始化轮播图数据函数*/
+			function initMarqueeData() {
+				/*轮播数量:4*/
+				for (var i = 0; i < 4; i++) {
+					/*定义轮播元素  数组*/
+					var marqueeItem = {};
+					/*轮播数组内容ID*/
+					marqueeItem.contentId = i;
+					/*轮播图共四张,i=3 即第四张*/
+					if (i == 3) {
+						marqueeItem.imagerpath = '../img/slider/slider4.png';
+						/*其它的张数名则为 i+1*/
+					} else {
+						marqueeItem.imagerpath = '../img/slider/slider' + (i + 1) + '.jpg';
+					}
+					/*使其生效*/
+					marqueeArray.push(marqueeItem);
+				}
+			}
+			
+			/*点击事件*/
+			function addListevent() {
+					mui('#mui-mall-car-service-list-ul').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					var title = this.innerText;
+					var isBars = false;
+					var barsIcon = '';
+					var aniShow = getaniShow();
+					pushWebView({
+						webType: 'newWebview_First',
+						id: id,
+						href: href,
+						aniShow: aniShow,
+						title: title,
+						isBars: isBars,
+						barsIcon: barsIcon,
+						extendOptions: {}
+					})
+				});
+			}
+		</script>
+	</body>
+
+</html>
