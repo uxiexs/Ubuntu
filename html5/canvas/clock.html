@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas-clock</title>
+    <style>
+        .clock {
+            display: block;
+            margin: 50px auto;
+            border: 1px solid #f00;
+        }
+
+        .timetable {
+            width: 300px;
+            margin: 0 auto;
+            font-size: 18px;
+            font-family: "Arial";
+        }
+    </style>
+</head>
+<body>
+<canvas id="clock" class="clock" width="500" height="500"></canvas>
+<div id="timeTab" class="timetable">00:00:00</div>
+<script type="text/javascript">
+    function init() {
+        var clock = document.getElementById("clock");
+        var timeTab = document.getElementById("timeTab");
+        var ctx = clock.getContext("2d");
+        var r = clock.width / 2;
+        var r2 = 0;
+        var numbers = ['3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '1', '2'];
+        var rem = clock.width / 300;
+        var timer = null; // 移动画布
+        ctx.translate(r, r); // 表盘
+        function drawPanel() {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(0, 0, r - 5 * rem, 0, 2 * Math.PI, false);
+            ctx.lineWidth = 10 * rem;
+            ctx.stroke(); // 时刻字
+            ctx.beginPath();
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.font = 15 * rem + "px Arial";
+            for (var i = 0; i < 12; i++) {
+                ctx.fillText(numbers[i], (r - 30 * rem) * Math.cos(2 * Math.PI / 12 * i), (r - 30 * rem) * Math.sin(2 * Math.PI / 12 * i));
+            } // 时刻点
+            for (var j = 0; j < 60; j++) {
+                ctx.beginPath();
+                if (j % 5 == 0) {
+                    ctx.fillStyle = "#f00";
+                    r2 = 3 * rem;
+                } else {
+                    ctx.fillStyle = "#333";
+                    r2 = 2 * rem;
+                }
+                ctx.arc((r - 15 * rem) * Math.cos(2 * Math.PI / 60 * j), (r - 15 * rem) * Math.sin(2 * Math.PI / 60 * j), r2, 0, 2 * Math.PI, false);
+                ctx.fill();
+            }
+        }
+
+        // 时针
+        function drawHourLine(hour, minute) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rotate(2 * Math.PI / 12 * (hour + minute / 60));
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, -(r / 2));
+            ctx.lineWidth = 5 * rem;
+            ctx.lineCap = "round";
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        // 分针
+        function drawMinuteLine(minute, second) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rotate(2 * Math.PI / 60 * (minute + second / 60));
+            ctx.moveTo(0, 10 * rem);
+            ctx.lineTo(0, -(r / 2 + 20 * rem));
+            ctx.lineWidth = 3 * rem;
+            ctx.lineCap = "round";
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        // 秒针
+        function drawSecondLine(second) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rotate(2 * Math.PI / 60 * second);
+            ctx.moveTo(0, 10 * rem);
+            ctx.lineTo(0, -(r - 25 * rem));
+            ctx.lineWidth = 2 * rem;
+            ctx.lineCap = "round";
+            ctx.strokeStyle = "#fc0000";
+            ctx.stroke();
+            // 中心圆点
+            ctx.beginPath();
+            ctx.arc(0, 0, 3 * rem, 0, 2 * Math.PI, false);
+            ctx.fillStyle = "#ffffff";
+            ctx.fill();
+            ctx.restore();
+        }
+
+        // 绘制时钟
+        function drawClock() {
+            var now = new Date();
+            var h = now.getHours();
+            var i = now.getMinutes();
+            var s = now.getSeconds();
+            // 初始化并清除画布
+            ctx.translate(-r, -r);
+            ctx.clearRect(0, 0, clock.width, clock.height);
+            // 绘制时钟
+            ctx.translate(r, r);
+            drawPanel();
+            drawHourLine(h, i);
+            drawMinuteLine(i, s);
+            drawSecondLine(s);
+            // 数字时钟
+            timeTab.innerHTML = formatTwo(h) + ":" + formatTwo(i) + ":" + formatTwo(s);
+        }
+
+        // 初始化
+        drawClock();
+        // 动态改变时间
+        timer = setInterval(function () {
+            drawClock();
+        }, 1000);
+    }
+    // 格式化
+    function formatTwo(n) {
+        return n = n < 10 ? "0" + n : n;
+    }
+    window.addEventListener("load", init, false);
+</script>
+</body>
+</html>
